@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Replace Method</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+            String-de verilmis muntezem ifadeni axtararaq tapdigi ifadeleri parametr kimi verilmis
+            sozle deyisdirerek yeni String-i geri dondurur
+            => string.replace(regex, changeStr)
+        */
+
+        var str = 'Hello , I"am a developer';
+
+        var reg = /developer/g; // developer sozunu axtaracaq
+
+        var res = str.replace(reg, 'doctor'); // Tapdigi sozu 'doctor'-la deyisdirecek
+
+        document.write('<h1>' + res + '</h1>');
+
+    </script>
+
+</body>
+</html>

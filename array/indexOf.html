@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>IndexOf Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Array icinde deyer axtarir ve tapdigi ilk an hemin deyerin index nomresin geri dondurur 
+            => array.indexOf("search")
+        */
+
+        var arr = ['Angular', 'Node', 'React', 'Vue', 'Express', 'Nuxt', 'React'];
+
+        var search = arr.indexOf('Vue'); // "Vue" - nin index nomresi 3 oldugu ucun geriye 3-u dondurur
+
+        document.write('<h1>Index of Vue => ' + search + '</h1>');
+
+        // Axtarilan deyerin 2-cisinin index-in tapmaq ucun => arr.indexOf("search", (resFirstValue + 1))
+
+        var secondSearch = arr.indexOf('React', (search + 1));
+
+        document.write('<h1>Second Index of React => ' + secondSearch + '</h1>');
+
+        // Axtarilan deyer tapilmayanda geriye "-1" cavabi donur
+
+    </script>
+
+</body>
+</html>

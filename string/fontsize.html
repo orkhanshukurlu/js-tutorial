@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>FontSize Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            String-i font teqinin icinde geri dondurur ve ona size parametri elave edir
+            => string.fontsize(value)
+        */
+
+        var str = 'Hello, I am a developer';
+        
+        var fSize = str.fontsize(4); // <font size="4">string</font>
+
+        // Parametrin ala bileceyi en boyuk deyer 7-dir , 7-de cox deyer versek yene 7 goturulecek
+
+        document.write("<h1>Text : " + fSize + "</h1>");
+
+    </script>
+
+</body>
+</html>

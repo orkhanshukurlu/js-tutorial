@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>EndsWith Method</title>
+</head>
+<body>
+
+    <script>
+
+        // Bir sozun String-de bu sozle bitib bitmediyini yoxlayir => string.endsWith("search")
+
+        var str = 'Hello, I"am developer';
+
+        var str1 = str.endsWith('developer'); // String "developer" sozuyle bitdiyi ucun "true" dondurur
+
+        document.write('<h1>"developer" endsWith => ' + str1 + '</h1>');
+
+        // ===========================================================================================
+
+        /*
+            2-ci parametr yazilanda o parametre qeder olan sozde bu metod isleyir . 2-ci parametr 8-dirse,
+            [0,7] arasindaki sozde endsWith metodu isleyir ve o sozde axtaris edir
+        */
+
+        var str2 = str.endsWith('am', 11); // 10-cu index-e qeder olan soz "am"-le bitdiyi ucun "true" donur
+
+        document.write('<h1>Index 10 : "am" endsWith => ' + str2 + '</h1>');
+
+    </script>
+
+</body>
+</html>

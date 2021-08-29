@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Concat Method</title>
+</head>
+<body>
+
+    <script>
+
+        // Array-leri birlesdirmek ucun islenir => array.concat(arr1, arr2, ...)
+
+        var arr1 = ['Angular', 'React', 'Vue'];
+        var arr2 = ['Html', 'Css', 'Javascripts'];
+        var arr3 = ['Php', 'Laravel', 'Mysql'];
+
+        document.write('<h1>Normal array => ' + arr1 + '</h1>');
+
+        var con1 = arr1.concat(arr2);       // 1-ci Array-e 2-ci Array-i birlesdirdi
+        var con2 = arr1.concat(arr2, arr3); // 1-ci Array-e 2-ci ve 3-cu Array-i birlesdirdi
+
+        document.write('<h1>Concat 1 and 2 => '     + con1 + '</h1>');
+        document.write('<h1>Concat 1 , 2 and 3 => ' + con2 + '</h1>');
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Sort Method</title>
+</head>
+<body>
+
+    <script>
+
+        // Array elementlerini kicikden boyuye siralayir => array.sort()
+
+        var arr  = ['Html', 'Css', 2, 'Jquery'];
+
+        document.write('<h1>Array => ' + arr + '</h1>'); // Array-in normal hali
+
+        var sort = arr.sort();
+        
+        document.write('<h1>New Array => ' + sort + '</h1>'); // Array-in siralanmis hali
+
+        // Bu metodda reqemler ASCII koda gore siralanir => 1,123,3,34,5,7
+
+        var nums = [4, 3, 1, 5, 25, 16];
+
+        // Reqemleri adi qaydada siralamaq ucun xususi alqoritm
+
+        nums = nums.sort((a, b) => a - b); // Boyukden kiciye siralamaq ucun => "b-a"
+
+        document.write('<h1>Sorted numbers => ' + nums + '</h1>');
+
+    </script>
+
+</body>
+</html>

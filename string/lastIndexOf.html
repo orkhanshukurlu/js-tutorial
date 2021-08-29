@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>LastIndexOf Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            String icinde simvol axtarir ve tapdigi simvolun en sonuncusunun index nomresin geri dondurur 
+            => string.lastIndexOf("search")
+        */
+
+        var str = 'Hello, I"am developer';
+
+        var search = str.lastIndexOf('e'); // 17 => "e" simvolunun sonuncusunun index nomresi 19-dir
+
+        document.write('<h1> Last index of "e" => ' + search + '</h1>');
+
+        // Axtarilan deyer tapilmayanda geriye "-1" cavabi donur
+        // Axtarilan simvol soz olarsa hemin sozun baslagidi index-i geriye dondurur
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>SubString Method</title>
+</head>
+<body>
+
+    <script>
+
+        // String-in mueyyen hisseni alir => string.substring(start, end)
+
+        var str = 'Hello I"m developer';
+
+        // str.substring(4,8); => [4,7] araligindaki string-i geri dondurur
+
+        var str1 = str.substring(6,13);
+        
+        document.write('String : ' + str1 + '<br>');
+
+        // str.substring(12); => 12-ci indexden baslayir ve sona qeder hamisin geri dondurur
+
+        var str2 = str.substring(12);
+
+        document.write('String : ' + str2 + '<br>');
+
+        // Substring-de (-) index varsa o sifir kimi qebul edilir => (-4,7) ~ (0,7)
+        // Eger 2-ci index 0-dirsa ifade tersine icra edilir => (4,0) ~ (0,4)
+        // Eger start ve index eyni reqemdise geriye hec bir string donmur
+        // Eger end > start - dirsa tersine icra edilir => (4,2) ~ (2,4)
+        // Slice metodundan ferqli olaraq Substring (-) deyer almir
+
+    </script>
+
+</body>
+</html>

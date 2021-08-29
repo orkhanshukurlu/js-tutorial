@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Ceil Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Ededi , ededin yerlesdiyi 2 reqem araliginin en boyuyune cevirir => Math.ceil(num)
+
+        var num1 =  4.32;
+        var num2 =  5;
+        var num3 = -4.21;
+
+        var ceil1 = Math.ceil(num1); // Eded [4,5] araliginda yerlesdigi ucun ededi '5'-e cevirir
+        var ceil2 = Math.ceil(num2); // Tam eded olanda hec bir deyisiklik etmir , 5 deyeri donur
+        var ceil3 = Math.ceil(num3); // Eded [-5;-4] araliginda yerlesdigi ucun ededi '-4'-e cevirir
+
+        document.write('<h1> Ceil (' + num1 + ') => ' + ceil1 + '</h1>');
+        document.write('<h1> Ceil (' + num2 + ') => ' + ceil2 + '</h1>');
+        document.write('<h1> Ceil (' + num3 + ') => ' + ceil3 + '</h1>');
+
+    </script>
+</body>
+</html>

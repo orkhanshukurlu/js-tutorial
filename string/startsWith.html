@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>StartsWith Method</title>
+</head>
+<body>
+
+    <script>
+
+        // Bir sozun String-de bu sozle baslayib baslamadigini yoxlayir => string.startsWith("search")
+
+        var str = 'Hello, I"am developer';
+
+        var str1 = str.startsWith('Hello'); // String "Hello" sozuyle basladigi ucun "true" dondurur
+
+        document.write('<h1>"Hello" startsWith => ' + str1 + '</h1>');
+
+        // ===========================================================================================
+
+        // 2-ci parametr sozun o index-den baslayib baslamadigini yoxlayir
+
+        var str2 = str.startsWith('I"am', 7); // I"am 7-ci indexden basladigi ucun "true" dondurur
+
+        document.write('<h1>Index 7 : I"am startsWith => ' + str2 + '</h1>');
+
+    </script>
+
+</body>
+</html>

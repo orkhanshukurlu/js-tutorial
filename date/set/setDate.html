@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>setDate Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Ayin gununu deyisdirir => new Date().setDate(date) -> date [1;31]
+
+        var dt = new Date();
+
+        var normalDate = dt.getDate();
+
+        dt.setDate(20);
+
+        var changeDate = dt.getDate();
+
+        document.write('<h1> Normal Date => ' + normalDate + '</h1>');
+        document.write('<h1> Change Date => ' + changeDate + '</h1>');
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Map Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Array elementlerinin her birini mueyyen funksiyayla deyisdirerek alinan yeni Array-i
+            geri dondurur => array.map(function_name)
+        */
+
+        var sqrt = (num) => Math.sqrt(num); // Elementleri deyisdiren funksiya
+
+        var arr = [16, 25, 81, 49];
+
+        var sqr = arr.map(sqrt);
+    
+        document.write('<h1> Normally Array => ' + arr + '</h1>');
+        document.write('<h1> Convert Array => '  + sqr + '</h1>');
+
+    </script>
+
+</body>
+</html>

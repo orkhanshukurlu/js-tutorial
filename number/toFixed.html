@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>To Fixed Method</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+            Verilen parametre nezere alaraq vergullu ededi vergulden sonra verilen parametre uygun 
+            yuvarlaqlasdirir => number.toFixed(param)
+        */
+
+        var num = 4.36457918;
+        
+        var fix0 = num.toFixed();
+        var fix1 = num.toFixed(1);
+        var fix2 = num.toFixed(2);
+        var fix3 = num.toFixed(3);
+        var fix4 = num.toFixed(4);
+        var fix5 = num.toFixed(5);
+        
+        document.write('<h1>' + num + ' no param => ' + fix0 + '</h1>');
+        document.write('<h1>' + num + ' as 1 => '     + fix1 + '</h1>');
+        document.write('<h1>' + num + ' as 2 => '     + fix2 + '</h1>');
+        document.write('<h1>' + num + ' as 3 => '     + fix3 + '</h1>');
+        document.write('<h1>' + num + ' as 4 => '     + fix4 + '</h1>');
+        document.write('<h1>' + num + ' as 5 => '     + fix5 + '</h1>');
+
+    </script>
+</body>
+</html>

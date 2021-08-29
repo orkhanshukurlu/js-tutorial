@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Hypot Method</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+            Verilen parametrlerin kvadratlari ceminin ikinci dereceden kokunu geri dondurur . Pifaqor
+            teoremine oxsardir => Math.hypot(num1, num2, ...)
+        */
+
+        var num1 = 5;
+        var num2 = 12;
+
+        var result = Math.hypot(num1, num2); // (5^2 + 12^2)^1/2 => 13
+
+        document.write('<h1> &#8730;(' + num1 + '^2+' + num2 + '^2) = ' + result + '</h1>');
+
+    </script>
+</body>
+</html>

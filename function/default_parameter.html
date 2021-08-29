@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Default Parameters</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Funksiyaya default deyer verilir . Eger bir parametr girilmezse avtomatik default parametr
+            icra edilir . Yeni bu , funksiyaya parametr verilmesi vacib olmadiqda istifade edilir
+        */
+
+        function hi(name = 'Orkhan', surname = 'Shukurlu')
+        {
+            document.write('<h1>' + name + ' ' + surname + '</h1>');
+        }
+
+        hi();
+        
+        // Parametr vermediyimiz ucun funksiya avtomatik olaraq default verilen parametrleri icra edir
+
+    </script>
+    
+</body>
+</html>

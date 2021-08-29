@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>This</title>
+</head>
+<body>
+    
+    <script>
+
+        // Bu menasini verir . Object-de yazildigi zaman bu objectin icinde hansisa ozelliyi cagirir
+
+        var person = {
+
+            name:     'Orkhan',
+            surname:  'Shukurlu',
+            fullname: function()
+            {
+                return this.name + ' ' + this.surname;
+            }
+        };
+
+
+        document.write('<h1> Fullname => ' + person.fullname() + '</h1>');
+        
+    </script>
+</body>
+</html>

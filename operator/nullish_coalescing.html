@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Nullish coalescing Operator</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Bos birlesdirme operatoru adlanir . Eger sol terefin deyeri "null" ve ya "undefined" olarsa
+            sag terefi , eks halda sol terefi dondurur => leftExpr ?? rightExpr
+        */
+
+        var val_1 = null ?? 'Hello';
+        var val_2 = undefined ?? 'Hi';
+        var val_3 = 124 ?? 45;
+        var val_4 = 29 ?? 'World';
+
+        document.write('<h1>' + val_1 + '</h1>'); // Sol teref "null" oldugu ucun Sag teref donur
+        document.write('<h1>' + val_2 + '</h1>'); // Sol teref "undefined" oldugu ucun Sag teref donur
+
+        document.write('<h1>' + val_3 + '</h1>'); // Sol teref "null" ve ya "undefined" olmadigi
+        document.write('<h1>' + val_4 + '</h1>'); // ucun ele Sol terefin ozu geri donur
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Splice Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Elementleri silmek, elave etmek ve ya eyni vaxtda hem silib hem de elave etmek ucun islenir 
+            => array.splice(start, deleteCount, ... items)
+            start       => Baslayacagi index nomresi
+            deleteCount => Silinecek element sayi
+            items       => Elave edilecek elementler
+        */
+
+        var arr = ['Html', 'Css', 'Bootstrap', 'Js', 'Jquery', 'React'];
+
+        var spl = arr.splice(1, 4, 'Vue', 'Ajax');
+
+        document.write('<h1>Remove => ' + spl + '</h1>'); // Array-den silinen elementler
+
+        // 1-ci indexden basla ve 4 denesin sil => ['Css', 'Bootstrap', 'Js', 'Jquery'] silinecek
+        // Silinenden sonra alinan Array => ['Html', 'React']
+        // 1-ci indexden baslayaraq 'Vue' ve 'Ajax'-i elave et
+        // En sonda alinan Array => [Html, Vue, Ajax, React] Artiq 1-ci ci index-e Vue dusdu
+        
+        document.write('<h1>Result => ' + arr + '</h1>');
+
+        // Array-e yalniz nese elave etmek istedikde (start, 0, ...items) => Nese silinmesin
+        // Array-den yalniz nese silmek istedikde (start, deleteCount) => Nese elave edilmesin
+        /*
+            Metod-a silinen element sayi verilmedikce gosterilen indexden baslayaraq sona qeder
+            butun elementleri silir => splice(2) -> 2-ci indexden baslayaraq butun hamisin silecek
+        */
+
+    </script>
+
+</body>
+</html>

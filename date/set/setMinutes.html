@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>setMinutes Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Deqiqeni deyisdirir => new Date().setMinutes(minute) -> minute [0;59]
+
+        var dt = new Date();
+
+        var normalMinute = dt.getMinutes();
+
+        dt.setMinutes(55);
+
+        var changeMinute = dt.getMinutes();
+
+        document.write('<h1> Normal Minute => ' + normalMinute + '</h1>');
+        document.write('<h1> Change Minute => ' + changeMinute + '</h1>');
+
+        // Bundan elave setSeconds ([0;59]) , setMilliseconds ([1;999]) metodlari da var
+        
+    </script>
+</body>
+</html>

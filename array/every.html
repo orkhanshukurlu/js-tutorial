@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Every Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Array-in her bir elementinin mueyyen bir qaydaya tabe olub olmadigini yoxlayir ve geriye
+            "bool" tipli deyer dondurur => array.every(function_name)
+        */
+
+        var isDouble = (num) => num % 2 == 0; // Elementleri yoxlayacaq Funksiya
+
+        var arr = [6, 8, 22, 16, 98];
+
+        var check = arr.every(isDouble);
+
+        if(check)
+        {
+            document.write('<h1>All numbers is double</h1>'); // Butun ededler "cem" - dir
+        }
+
+        else
+        {
+            document.write('<h1>All numbers is not double</h1>'); // Butun ededler "cem" deyil
+        }
+
+    </script>
+
+</body>
+</html>

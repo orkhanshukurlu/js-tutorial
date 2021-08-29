@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Sign Method</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+            Ededin isaresini geri dondurur . Eded musbetdirse 1 , menfidirse -1 , sifirdirsa 0
+            eks hallarda ise NaN geri dondurur => Math.sign(value)
+        */
+
+        var sign1 = Math.sign(3);   //  1  -> Musbet
+        var sign2 = Math.sign(-3);  // -1  -> Menfi
+        var sign3 = Math.sign(0);   //  0  -> Sifir
+        var sign4 = Math.sign('5'); //  1  -> String olsa da musbet
+        var sign5 = Math.sign('x'); // NaN -> Eded olmadigi ucun NaN
+
+        document.write('<h1> 3 is '   + checkSign(sign1) + '</h1>');
+        document.write('<h1> -3 is '  + checkSign(sign2) + '</h1>');
+        document.write('<h1> 0 is '   + checkSign(sign3) + '</h1>');
+        document.write('<h1> "5" is ' + checkSign(sign4) + '</h1>');
+        document.write('<h1> "x" is ' + checkSign(sign5) + '</h1>');
+
+        function checkSign(num)
+        {
+            if(num == 1)       return 'Positive';
+            else if(num == -1) return 'Negative';
+            else if(num == 0)  return 'Zero';
+            else               return 'Not a Number';
+        }
+        
+    </script>
+</body>
+</html>

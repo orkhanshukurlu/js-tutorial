@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>getMinutes Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Deqiqeni geri dondurur => new Date().getMinutes()
+
+        var dt  = new Date();
+        var min = dt.getMinutes();
+
+        // Metod deqiqeni dondurduyu ucun [0;59] araliginda bir eded geri dondurur
+
+        document.write('<h1> Deqiqe neçədir : <mark>' + min + '</mark></h1>');
+
+        // Bundan elave setSeconds ([0;59]) , setMilliseconds ([1;999]) metodlari da var
+        
+    </script>
+</body>
+</html>

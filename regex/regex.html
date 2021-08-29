@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Regular Expression</title>
+</head>
+<body>
+    
+    <script>
+
+        // Muntezem ifadeleri teyin etmek ucun isledilir
+
+        // 2 cur teyin olunur . Her 2 yazilis da eyni mena verir
+
+        var reg1 = /[A-Z]/i; // /pattern/flags
+        var reg2 = new RegExp('[A-Z]', 'i');
+
+        document.write('<h1>' + reg1 + '</h1>'); // /[A-Z]/i
+        document.write('<h1>' + reg2 + '</h1>'); // /[A-Z]/i
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Fill Method</title>
+</head>
+<body>
+
+    <script>
+
+        // Arrayi-in mueyyen araliqdaki deyerlerini deyisdirir => array.fill(value, start, end)
+
+        var arr = [4, 9, 23, 35, 76, 103];
+
+        document.write('<h1>Array => ' + arr + '</h1>');
+
+        var arr1 = arr.fill(7, 1, 4); // [1,3] araligindaki Array-in qiymetini 7 edir
+
+        document.write('<h1>Fill (7,1,4) => ' + arr1 + '</h1>');
+
+        var arr2 = arr.fill(8, 2); // 2-ci indexden baslayir ve 8 edir
+
+        document.write('<h1>Fill (8,2) => ' + arr2 + '</h1>');
+
+        var arr3 = arr.fill(2); // Array-in butun elementlerini 2 edir
+
+        document.write('<h1>Fill (2) => ' + arr3 + '</h1>');
+
+        // Eger start ve index eyni reqemdise geriye Array-in ozu qayidir
+        // Eger start ve index tapilmirsa geriye Array-in ozu qayidir
+        // Eger start "-" dirse => start + arr.length icra edilir
+        // Eger end "-" dirse => end + arr.length icra edilir
+
+        var arr = [4, 9, 23, 35, 76, 103];
+
+        var arr4 = arr.fill(7, 3, 3); // Geriye Array-in ozu qayidir (start=end)
+
+        document.write('<h1>Fill (7,3,3) => ' + arr4 + '</h1>');
+
+        var arr5 = arr.fill(8, 6, 9); // Geriye Array-in ozu qayidir (start ve end tapilmadi)
+
+        document.write('<h1>Fill (8,6,9) => ' + arr5 + '</h1>');
+
+        var arr6 = arr.fill(2, -3, 5); // 2,-3,5 ~ 2,3,5 => (-3 + arr.length => -3 + 6 = 3)
+
+        document.write('<h1>Fill (2, -3, 5) => ' + arr6 + '</h1>');
+
+        var arr7 = arr.fill(2, 2, -1); // 2,2,-1 ~ 2,2,5 => (-1 + arr.length => -1 + 6 = 5)
+
+        document.write('<h1>Fill (2, 2, -1) => ' + arr7 + '</h1>');
+
+    </script>
+
+</body>
+</html>

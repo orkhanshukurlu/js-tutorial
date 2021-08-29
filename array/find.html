@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Find Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Array elementlerini yoxlayaraq mueyyen bir qaydaya tabe olan ilk deyeri geriye dondurur.
+            tapmaqdiqda ise "undefined" => array.find(function_name)
+        */
+
+        var isNatural = (num) => num > 0; // Elementleri yoxlayacaq Funksiya
+
+        var arr = [-6, 0, -22, 7, 16];
+
+        var natural = arr.find(isNatural);
+
+        if(natural)
+        {
+            document.write('<h1> First Natural => ' + natural + '</h1>'); // Ilk Natural eded 7 - dir
+        }
+
+        else
+        {
+            document.write('<h1> There is not natural number </h1>');
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Regex Flags
+
+g - Axtarisi butun metnin icinde edir
+i - Axtaris ederken boyuk kicik herf ayriseckiliyi etmir
+m - Boyuk metnlerde axtarisi butun metnde etmek ucun istifade edilir
+u - Turkce simvollardan ibaret metnde axtaris etmek ucun istifade edilir

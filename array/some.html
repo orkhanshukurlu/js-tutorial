@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Some Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Array elementlerini yoxlayaraq en azi bir elementin mueyyen bir qaydaya tabe olub olmadigini
+            yoxlayir , en az biri tabedirse "true" qaytarir => array.some(function_name)
+        */
+
+        var array = [6, 7, 9, 27, 16, 35];  // Yoxlanilacaq Array
+        var isNum = (num) => isFinite(num); // Yoxlayacaq Funksiya
+
+        var check = array.some(isNum);
+
+        // Eger elementlerin en azi biri funksiyani odeyirse "true" donur, hec biri odenmirse "false"
+
+        if(check)
+        {
+            document.write('<h1> At least element is number => ' + check + '</h1>');
+        }
+
+        else
+        {
+            document.write('<h1> At least element is number => ' + check + '</h1>');
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Substr Method</title>
+</head>
+<body>
+
+    <script>
+
+        // String-in mueyyen hisseni alir => string.substr(start, length)
+
+        var str = 'Hello I"m developer';
+
+        document.write('<h1> Original string => ' + str + '</h1>');
+
+        // str.substr(10,7); => 10-cu indexden baslayir ve 7 simvollu string geri dondurur
+
+        var str1 = str.substr(10, 7);
+        
+        document.write('<h1> Substr (10,7) => ' + str1 + '</h1>');
+
+        // str.substr(6); => 6-ci indexden baslayir ve sona qeder hamisin geri dondurur
+
+        var str2 = str.substr(6);
+
+        document.write('<h1> Substr (6) => ' + str2 + '</h1>');
+
+        // str.substr(-9,3); => arxadan sayir , "-8" - den baslayir ve 3 denesin geri dondurur
+
+        var str3 = str.substr(-9, 3);
+        
+        document.write('<h1> Substr (-9,3) => ' + str3 + '</h1>');
+
+        // str.substr(-5); => arxadan sayir , "-4" - den baslayir ve sona qeder hamisin geri dondurur
+
+        var str4 = str.substr(-5);
+
+        document.write('<h1> Substr (-5) => ' + str4 + '</h1>');
+
+        // Uzunluq 0 ve ya (-) ededdirse , 0 kimi qebul olunur ve geriye hecne donmur
+
+    </script>
+
+</body>
+</html>

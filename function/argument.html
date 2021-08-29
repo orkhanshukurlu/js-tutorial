@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Arguments</title>
+</head>
+<body>
+    
+    <script>
+
+        // Funskiyaya her hansi parametr verilmese bele gelen butun parametrleri almaq ucun isledilir
+
+        function multiple()
+        {
+            var result = 0;
+
+            for(var i in arguments)
+            {
+                result += arguments[i];
+            }
+
+            return result;
+        }
+
+        document.write('<h1>' + multiple(3,5,12,32,1) + '</h1>'); // 3+5+12+32+1 => 53
+
+        /*
+            Girilen deyerleri funksiyada "arguments" vasitesile alaraq funksiyada istifade edir
+            => arguments[0], arguments[1], ...
+        */
+
+    </script>
+</body>
+</html>

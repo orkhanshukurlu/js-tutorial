@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Date Object</title>
+</head>
+<body>
+    
+    <script>
+
+        // JS-de tarix ve saat emeliyyatlari ucun istifade edilir => new Date()
+
+        // Birinci yazilisda indiki zamanin bilgileri geri donur
+        // Birinci yazilisda ise zamani ozumuz daxil edirik
+
+        var d = new Date();
+        var t = new Date(1995, 4, 30, 23, 57, 32); // Year, Month, Day, Hour, Minute, Second
+
+        document.write(`<h1>${d}</h1>`); // Mon Jan 11 2021 02:52:26 GMT+0400 (Azerbaijan Standard Time)
+        document.write(`<h1>${t}</h1>`); // Tue May 30 1995 23:57:32 GMT+0400 (Azerbaijan Standard Time)
+        
+    </script>
+</body>
+</html>

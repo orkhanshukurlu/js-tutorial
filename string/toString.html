@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>ToString Method</title>
+</head>
+<body>
+
+    <script>
+
+        // Deyisenin qiymetini String-e cevirir => variable.toString(value)
+
+        var x   = 45.34;
+        var y   = true;
+        var z   = NaN;
+        var res = '';
+
+        x = x.toString();
+        y = y.toString();
+        z = z.toString();
+
+        // String-e cevrildiyi ucun hamisinin type-i "string" olacaq
+
+        res += '<h1> Value => ' + x + ' || Type => ' + typeof x + '</h1>';
+        res += '<h1> Value => ' + y + ' || Type => ' + typeof y + '</h1>';
+        res += '<h1> Value => ' + z + ' || Type => ' + typeof z + '</h1>';
+
+        document.write(res);
+
+        // Deyisenin qiymeti reqemdirse onu bu metodla say sistemine cevirmek olur
+
+        var number = 11;
+        var result = '<br>';
+
+        var num2  = number.toString(2);  // 2-lik say sistemine cevirecek
+        var num4  = number.toString(4);  // 4-luk say sistemine cevirecek
+        var num8  = number.toString(8);  // 8-lik say sistemine cevirecek
+        var num16 = number.toString(16); // 16-liq say sistemine cevirecek
+
+        result += '<h1> 7 to Binary (2) => '       + num2  + '</h1>';
+        result += '<h1> 7 to Quaternary (4) => '   + num4  + '</h1>';
+        result += '<h1> 7 to Octal (8) => '        + num8  + '</h1>';
+        result += '<h1> 7 to Hexadecimal (16) => ' + num16 + '</h1>';
+
+        document.write(result);
+
+    </script>
+
+</body>
+</html>

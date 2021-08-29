@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Slice Method</title>
+</head>
+<body>
+
+    <script>
+
+        // String-i dilimlemek ucun isledilir => string.slice(start_index, end_index)
+
+        var str = 'Hello I"m developer';
+
+        document.write('<h1>String => ' + str + '</h1>');
+
+        var str1 = str.slice(6, 13);  // [6,12] araligindaki string-i geri dondurur
+        var str2 = str.slice(12);     // 12-ci indexden baslayir ve hamisin geri dondurur
+        var str3 = str.slice(-10,-3); // [-9,-3] Arxadan sayiriq , -9 dan , -3 e qeder cap edir
+        var str4 = str.slice(-9);     // Arxadan sayiriq , -8 den baslayir ve hamisin geri dondurur
+
+        document.write('<h1>Slice (6,13) => '   + str1 + '</h1>');
+        document.write('<h1>Slice (12) => '     + str2 + '</h1>');
+        document.write('<h1>Slice (-10,-3) => ' + str3 + '</h1>');
+        document.write('<h1>Slice (-9) => '     + str4 + '</h1>');
+
+        // Eger start ve index eyni reqemdise geriye hec bir string donmur
+        // Eger end > index - dirse geriye hec bir string donmur
+
+    </script>
+
+</body>
+</html>

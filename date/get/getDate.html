@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>getDate Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Bu gunun ayin necenci gunu oldugu geri dondurur => new Date().getDate()
+
+        var dt   = new Date();
+        var date = dt.getDate();
+
+        // Metod gunu dondurduyu ucun [1;31] araliginda bir eded geri dondurur
+
+        document.write('<h1> Bu gün ayın neçəsidir : <mark>' + date + '</mark></h1>');
+        
+    </script>
+</body>
+</html>

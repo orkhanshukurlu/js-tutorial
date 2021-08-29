@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Multidimensional Arrays</title>
+</head>
+<body>
+
+    <script>
+
+        // Coxolculu massivler => [[a,b,c], [d,e,f], [g,h,i]] -> arr[0][2] -> c
+
+        var arr = [
+            ['Angular', 'React', 'Vue'],
+            ['Node', 'Express', 'Adonis'],
+            ['Html', 'Css', 'Javascript']
+        ];
+
+        for(var i in arr)
+        {
+            for(var j in arr)
+            {
+                document.write(arr[i][j] + ' '); // [0][0], [0][1], [0][2], ...
+            }
+
+            document.write('<br>');
+        }
+
+    </script>
+
+</body>
+</html>

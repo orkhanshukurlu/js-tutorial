@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>For In Loop</title>
+</head>
+<body>
+
+    <script>
+
+        // Object ve Arry-leri dondurmek ucun istifade edilir => for(i in obj) -> obj[i]
+
+        var person = {
+
+            name:    'Orkhan',
+            surname: 'Shukurlu',
+            age:     23
+        };
+
+        for(x in person)
+        {
+            document.write(person[x] + '<br>');
+        }
+
+        /***********************************************************/
+
+        var cars = ['BMW', 'Mercedes', 'Toyota', 'Nissan', 'Jeep'];
+
+        for(i in cars)
+        {
+            console.log(cars[i]);
+        }
+
+    </script>
+
+</body>
+</html>

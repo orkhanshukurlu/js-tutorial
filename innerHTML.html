@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>InnerHTML Method</title>
+</head>
+<body>
+
+    <button onclick="addHtml();">Add HTML</button>
+
+    <div id="text"></div>
+
+    <script>
+
+        function addHtml()
+        {
+            // Her Click edende asagidaki Html-i elave edir
+            
+            document.getElementById('text').innerHTML += '<p>Hello world !</p>';
+        }
+    
+    </script>
+
+</body>
+</html>

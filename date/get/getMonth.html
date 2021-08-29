@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>getMonth Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Bu ayin hansi ay oldugunu geri dondurur => new Date().getMonth()
+
+        var dt  = new Date();
+        var mon = dt.getMonth();
+
+        // Metod [0;11] araliginda bir eded geri dondurur . 0 Yanvar , 1 Fevral , 2 Mart , ...
+
+        var result;
+
+        if(mon == 0)        result = 'Yanvar';   //  0
+        else if(mon == 1)   result = 'Fevral';   //  1
+        else if(mon == 2)   result = 'Mart';     //  2
+        else if(mon == 3)   result = 'Aprel';    //  3
+        else if(mon == 4)   result = 'May';      //  4
+        else if(mon == 5)   result = 'İyun';     //  5
+        else if(mon == 6)   result = 'İyul';     //  6
+        else if(mon == 7)   result = 'Avqust';   //  7
+        else if(mon == 8)   result = 'Sentyabr'; //  8
+        else if(mon == 9)   result = 'Oktyabr';  //  9
+        else if(mon == 10)  result = 'Noyabr';   // 10
+        else                result = 'Dekabr';   // 11
+
+        document.write('<h1> Bu ay hansı aydır : <mark>' + result + '</mark></h1>');
+        
+    </script>
+</body>
+</html>

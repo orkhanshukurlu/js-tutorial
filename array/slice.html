@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Slice Method</title>
+</head>
+<body>
+
+    <script>
+
+        // Arrayi-i dilimlemek ucun isledilir => array.slice(start_index, end_index)
+
+        var arr = ['HTML', 'CSS', 'JS', 'JQUERY', 'REACT'];
+
+        document.write('<h1>Array => ' + arr + '</h1>');
+
+        var arr1 = arr.slice(1, 4);  // [1,3] araligindaki Array-i geri dondurur
+        var arr2 = arr.slice(2);     // 2-ci indexden baslayir ve hamisin geri dondurur
+        var arr3 = arr.slice(-4,-1); // [-3,-1] Arxadan sayiriq , -3 dan , -1 e qeder cap edir
+        var arr4 = arr.slice(-3);    // Arxadan sayiriq , -2 den baslayir ve hamisin geri dondurur
+
+        document.write('<h1>Slice (1,4) => '   + arr1 + '</h1>');
+        document.write('<h1>Slice (2) => '     + arr2 + '</h1>');
+        document.write('<h1>Slice (-4,-1) => ' + arr3 + '</h1>');
+        document.write('<h1>Slice (-3) => '    + arr4 + '</h1>');
+
+        // Eger start ve index eyni reqemdise geriye hec bir string donmur
+        // Eger end > index - dirse geriye hec bir string donmur
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>getTime Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // 1 yanvar 1970-ci ilden beri olan millisaniye sayini geri dondurur => new Date().getTime()
+
+        var start = new Date();
+
+        for (var i = 0; i < 999999; i++)
+        {
+            Math.sqrt(i);
+        }
+
+        var end = new Date();
+
+        document.write('<h1> Operation took ' + (end.getTime() - start.getTime()) + ' ms </h1>');
+        
+    </script>
+</body>
+</html>

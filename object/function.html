@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Objects with Function</title>
+</head>
+<body>
+    
+    <script>
+
+        // Object-leri funksiya vasitesile yaratmaq
+
+        var User = function(user, pass)
+        {
+            this.username = user;
+            this.password = pass;
+        }
+
+        var user1 = new User('Orkhan', '12345'); // User {username: "Orkhan", password: "12345"}
+        var user2 = new User('Tural', 'wewewe'); // User {username: "Tural", password: "wewewe"}
+
+        console.log(user1);
+        console.log(user2);
+        
+    </script>
+</body>
+</html>

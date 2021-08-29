@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Is Finite Function</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Deyisenin sonlu bir eded olub olmadigini yoxlayir , Eger eded +Infinity (+ sonsuzluq),
+            -Infinity (- sonsuzluq) ve ya Nan (reqem deyil) olarsa false, eks hallarda "true" donur
+            => isFinite("value")
+        */
+
+        var a = 3;
+        var b = '4';
+        var c = 'js';
+        var d = -Infinity;
+        var e = '7-2';
+        var f = NaN;
+        var g = '2020/10/5';
+
+        document.write('<h1>' + a + ' is finite ? - ' + isFinite(a) + '</h1>');
+        document.write('<h1>' + b + ' is finite ? - ' + isFinite(b) + '</h1>');
+        document.write('<h1>' + c + ' is finite ? - ' + isFinite(c) + '</h1>');
+        document.write('<h1>' + d + ' is finite ? - ' + isFinite(d) + '</h1>');
+        document.write('<h1>' + e + ' is finite ? - ' + isFinite(e) + '</h1>');
+        document.write('<h1>' + f + ' is finite ? - ' + isFinite(f) + '</h1>');
+        document.write('<h1>' + g + ' is finite ? - ' + isFinite(g) + '</h1>');
+
+    </script>
+
+</body>
+</html>

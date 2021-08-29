@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>IndexOf Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            String icinde simvol axtarir ve tapdigi ilk an hemin simvolun index nomresin geri dondurur 
+            => string.indexOf("search")
+        */
+
+        var str = 'Hello, I"am developer';
+
+        var search = str.indexOf('o'); // "o" sozunun index nomresi 4 oldugu ucun geriye 4-u dondurur
+
+        document.write('<h1> First index of "o" => ' + search + '</h1>');
+
+        // Axtarilan simvolun 2-cisinin index-in tapmaq ucun => arr.indexOf("search", (resFirstValue + 1))
+
+        var secondSearch = str.indexOf('o', (search + 1));
+
+        document.write('<h1> Second index of "o" => ' + secondSearch + '</h1>');
+
+        // Axtarilan simvol tapilmayanda geriye "-1" cavabi donur
+        // Axtarilan simvol soz olarsa hemin sozun baslagidi index-i geriye dondurur
+
+    </script>
+
+</body>
+</html>

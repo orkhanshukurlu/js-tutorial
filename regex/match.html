@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Match Method</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+            String-de verilmis muntezem ifadeni axtarir . Eger tapirsa , tapdigi ifadeleri geriye Array
+            seklinde dondurur , eger tapmirsa geriye null deyeri donur
+            => string.match(regex)
+        */
+
+        var str = 'The rain in Spain stays mainly in the plain';
+
+        var reg = /[p-t]/g; // [p;t] arasindaki butun herfleri geri dondurecek
+
+        var res = str.match(reg);
+
+        console.log(result);
+        document.write('<h1>' + res + '</h1>');
+
+    </script>
+
+</body>
+</html>

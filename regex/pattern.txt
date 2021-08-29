@@ -1,0 +1,15 @@
+Regex Patterns
+
+[abc] - a b ve c simvollarindan birini axtarir
+[^ab] - a ve b simvolu olmayan basqa bir simvol axtarir
+[a-e] - a ve e arasinda yerlesen bir simvol axtarir
+(x|y) - x ve ya y simvolunu axtarir
+
+d - Reqem axtarir
+D - Reqem olmayan simvol axtarir
+s - Bosluq simvolu axtarir
+S - Bosluq olmayan simvol axtarir
+b - Evveli ve sonu eyni simvol olan sozleri axtarir
+w - Alt xett, reqemler ve herflerden birin axtarir
+W - Alt xett, reqemler ve herf olmayan bir simvol axtarir
+. - Yeni setr olmayan simvol axtarir

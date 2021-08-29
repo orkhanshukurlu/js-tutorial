@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>ForEach Method</title>
+</head>
+<body>
+
+    <script>
+
+        // Array-in her bir elementini donguye salir => array.forEach(function(params){ ... })
+
+        var arr  = ['PHP', 'MYSQL', 'LARAVEL'];
+
+        arr.forEach(function(item)
+        {
+            document.write('<h1>' + item + '</h1>');
+        });
+
+        arr.forEach(function (item, index, array)
+        {
+            document.write('<h1>' + index + ' => ' + item + ' => ' + array + '</h1>');
+        });
+
+    </script>
+
+</body>
+</html>

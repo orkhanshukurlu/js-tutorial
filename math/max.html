@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Max Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Parametr kimi verilen ededlerin en boyuyunu geri dondurur => Math.max(value1, value2, ...)
+
+        var a = 4;
+        var b = 7;
+        var c = 5;
+        var d = [5, 3, 8];
+
+        var maxNum = Math.max(a, b, c);
+        var maxArr = Math.max(... d);
+
+        document.write('<h1> Max (' + a + ',' + b + ',' + c + ') => ' + maxNum + '</h1>');
+        document.write('<h1> Max (' + d + ') => ' + maxArr + '</h1>');
+
+    </script>
+</body>
+</html>

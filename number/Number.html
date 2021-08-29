@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Number Method</title>
+</head>
+<body>
+
+    <script>
+
+        // Deyisenin qiymetini Number tipine cevirir => Number(value)
+
+        var res   = '';
+        var num1  = Number(new Date());
+        var num2  = Number(true);        // 1
+        var num3  = Number(false);       // 0
+        var num4  = Number('123');       // 123
+        var num5  = Number('12.3');      // 12.3
+        var num6  = Number('12.00');     // 12
+        var num7  = Number('123e-1');    // 12.3
+        var num8  = Number('');          // 0
+        var num9  = Number(null);        // 0
+        var num10 = Number('0x11');      // 17
+        var num11 = Number('0b11');      // 3
+        var num12 = Number('0o11');      // 9
+        var num13 = Number('foo');       // NaN
+        var num14 = Number('100a');      // NaN
+        var num15 = Number('-Infinity'); // -Infinity
+
+        // Number-e cevrildiyi ucun hamisinin type-i "number" olacaq
+
+        res += '<h1> Type => ' + typeof num1  + ' || ' + 'Value => ' + num1  + '</h1>';
+        res += '<h1> Type => ' + typeof num2  + ' || ' + 'Value => ' + num2  + '</h1>';
+        res += '<h1> Type => ' + typeof num3  + ' || ' + 'Value => ' + num3  + '</h1>';
+        res += '<h1> Type => ' + typeof num4  + ' || ' + 'Value => ' + num4  + '</h1>';
+        res += '<h1> Type => ' + typeof num5  + ' || ' + 'Value => ' + num5  + '</h1>';
+        res += '<h1> Type => ' + typeof num6  + ' || ' + 'Value => ' + num6  + '</h1>';
+        res += '<h1> Type => ' + typeof num7  + ' || ' + 'Value => ' + num7  + '</h1>';
+        res += '<h1> Type => ' + typeof num8  + ' || ' + 'Value => ' + num8  + '</h1>';
+        res += '<h1> Type => ' + typeof num9  + ' || ' + 'Value => ' + num9  + '</h1>';
+        res += '<h1> Type => ' + typeof num10 + ' || ' + 'Value => ' + num10 + '</h1>';
+        res += '<h1> Type => ' + typeof num11 + ' || ' + 'Value => ' + num11 + '</h1>';
+        res += '<h1> Type => ' + typeof num12 + ' || ' + 'Value => ' + num12 + '</h1>';
+        res += '<h1> Type => ' + typeof num13 + ' || ' + 'Value => ' + num13 + '</h1>';
+        res += '<h1> Type => ' + typeof num14 + ' || ' + 'Value => ' + num14 + '</h1>';
+        res += '<h1> Type => ' + typeof num15 + ' || ' + 'Value => ' + num15 + '</h1>';
+        
+        document.write(res);
+
+    </script>
+
+</body>
+</html>

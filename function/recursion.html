@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Recursive Function</title>
+</head>
+<body>
+    
+    <script>
+
+        // Funksiya ozunde ozune tekrar tekrar muraciet edirse bele funksiyalar rekursiv funksiyalardir
+
+        function fact(n)
+        {
+            if(n == 0 || n == 1)
+            {
+                return 1; // 0! ve 1! - in qiymeti 1 oldugu ucun "1" deyeri geri donur
+            }
+
+            return n * fact(n - 1); // 0 ve 1 olmadiqda ise n! = n * (n - 1) hesablanir
+        }
+
+        for(var i=0; i<=7; i++)
+        {
+            document.write('<h1>' + i + '!=' + fact(i) + '</h1>');
+        }
+
+    </script>
+</body>
+</html>

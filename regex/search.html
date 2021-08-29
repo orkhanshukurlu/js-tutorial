@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Search Method</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+            String-de verilmis muntezem ifadeni axtararaq tapdigi ifadenin index nomresini geri dondurur
+            => string.search(regex)
+        */
+
+        var str = 'Hello , I"am a developer';
+
+        var reg = /I/g; // 'I' simvolunu axtaracaq
+
+        var res = str.search(reg); // Tapdigi simvolun index nomresin geri dondurecek
+
+        document.write('<h1> Index value of I => ' + res + '</h1>');
+
+        // Eger metod axtardigi ifadeni tapmirsa geriye '-1' dondurur
+
+    </script>
+
+</body>
+</html>

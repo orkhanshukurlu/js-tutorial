@@ -1,0 +1,7 @@
+Hata Adı         Açıklaması
+==============================================
+RangeError       Sayı sınırı hatası
+ReferenceError   Referans hatası
+SyntaxError      Sözdizimi hatası
+TypeError        Tür hatası
+URIError         encodeURI() fonksiyonu hatası

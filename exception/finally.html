@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Try Catch Finally</title>
+</head>
+<body>
+
+    <script>
+
+        var a = 5;
+
+        /*
+            Try     => Xetali olabilecek kod bloku
+            Catch   => Xeta oldugunda xetani elde etmek ucun yazilan kod bloku
+            Throw   => Bizim yaratdigimiz xetalari yazmaq ucun istifade olunan kod bloku
+            Finally => Ne olursa olsun isleyen kod bloku
+        */
+
+        try
+        {
+            document.write(a + b);
+        }
+        
+        catch(err)
+        {
+            document.write('<h1>' + err + '</h1>');
+        }
+
+        finally
+        {
+            document.write('<h1>' + a + '</h1>');
+        }
+
+    </script>
+
+</body>
+</html>

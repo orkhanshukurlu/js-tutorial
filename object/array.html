@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Objects with Array</title>
+</head>
+<body>
+    
+    <script>
+
+        // Bir cox Object-i Array vasitesile teyin etmek olur
+
+        var person = [
+            
+            {
+                user: 'Orkhandev',
+                mail: 'orkhandev@gmail.com'
+            },
+            {
+                user: 'Huseyn94',
+                mail: 'husu94@gmail.com'
+            },
+            {
+                user: 'JasonJackrobot',
+                mail: 'jasonackrobot@gmail.com'
+            }
+        ];
+
+        for(var i in person)
+        {
+            var user = person[i].user;
+            var mail = person[i].mail;
+
+            document.write('<h1> Username : ' + user + ' || ' + 'Mail : ' + mail + '</h1>');
+        }
+        
+    </script>
+</body>
+</html>

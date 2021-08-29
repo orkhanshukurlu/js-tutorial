@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Prototype</title>
+</head>
+<body>
+    
+    <script>
+
+        // Prototype Object-lere sonradan elave ozellik elave etmek ucun isledilir
+
+        function person(name, surname)
+        {
+            this.name    = name;
+            this.surname = surname;
+        }
+
+        person.prototype.age = 23;
+
+        var person1 = new person('Orkhan', 'Shukurlu');
+
+        console.log(person1);
+
+        /*
+            person {name: "Orkhan", surname: "Shukurlu"}
+                name:    "Orkhan"
+                surname: "Shukurlu"
+                __proto__:
+                    age: 23
+            // Elave etdiyimiz age ozelliyi proto-nun icinde ekranda gorsenir
+        */
+        
+    </script>
+</body>
+</html>

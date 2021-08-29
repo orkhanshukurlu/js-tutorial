@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Random Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // 0 ve 1 arasinda random bir deyer geri dondurur (0 daxil , 1 yox -> [0;1)) => Math.random()
+
+        var random = Math.random();
+
+        document.write('<h1> Random value => ' + random + '</h1>');
+
+        // [0;10] arasinda tesadufi bir reqem geri dondurmek ucun alqoritm
+
+        var rand010 = Math.round(10 * Math.random());
+
+        document.write('<h1> [0;10] Random => ' + rand010 + '</h1>');
+
+        // [1;10] arasinda tesadufi bir reqem geri dondurmek ucun alqoritm
+
+        var rand110 = Math.ceil(10 * Math.random());
+
+        document.write('<h1> [1;10] Random => ' + rand110 + '</h1>');
+
+    </script>
+</body>
+</html>

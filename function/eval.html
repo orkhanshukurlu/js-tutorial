@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Eval Function</title>
+</head>
+<body>
+
+    <script>
+
+        // String deyerlerini dinamik Javascript kodlarina cevirir => eval("string")
+
+        var a = 5, b = 14;
+
+        document.write('<h1>' + 'a + b' + '</h1>'); // a + b , (a+b)-ni JS deyisenleri kimi basa dusmur
+        document.write('<h1>' + eval('a + b') + '</h1>'); // 19 , (a+b) ozunu JS deyiseni kimi gosterir
+
+        var _code = 'new Array(1, 5, 7, 3)';
+        var _eval = eval(_code); // String-i JS koduna cevirdi
+
+        document.write('<h1>' + _code + '</h1>'); // new Array(1, 5, 7, 3)
+        document.write('<h1>' + _eval + '</h1>'); // 1, 5, 7, 3
+
+    </script>
+
+</body>
+</html>

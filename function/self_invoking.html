@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Self Invoking</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Funksiyalari avtomatik cagirmaq ucun isledilir , sehife yenilenende funksiya isleyir
+
+            => (function func_name(...args)
+            {
+                some codes;
+                return value;
+            }(...args));
+        */
+
+        // 1. Parametrsiz
+
+        (function hello()
+        {
+            // Sehife yenilenende funksiya avtomatik islediyi ucun her defe ekrana "alert" verecek
+
+            alert('Hello 2021');
+        })();
+
+        // 2. Parametr-le
+
+        (function hi(name)
+        {
+            alert('Hi, ' + name);
+        })('Orkhan'); // "Orkhan" sozu parametr kimi daxil edilir
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Split Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            String-de axtaris ederek onu axtarilan simvola gore parcalayir ve Array-e dondurur
+            => string.split("search")
+        */
+
+        var str = 'Hello. I am a developer';
+
+        var newStr1 = str.split(' '); // " " simvoluna gore metni parcaladi ve Array-e dondurdu
+
+        for(var i in newStr1)
+        {
+            document.write('<h1>' + i + ' => ' + newStr1[i] + '</h1>');
+        }
+
+        document.write('<br>=======================');
+
+        var newStr2 = str.split(' ', 2); // " " - a gore metni parcaladi ve Array-e ilk 2 denesin dondurdu
+
+        for(var i in newStr2)
+        {
+            document.write('<h1>' + i + ' => ' + newStr2[i] + '</h1>');
+        }
+
+        // split('') => Metnin hamisin Array-e cevirir
+        // split()   => 1-olculu Array dondurur , 0-ci index metne beraberdir
+
+    </script>
+
+</body>
+</html>

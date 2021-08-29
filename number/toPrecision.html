@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>To Precision Method</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+            Verilen parametre gore ededin nece reqemden ibaret olacagini mueyyenlesdirir ve alinan son
+            neticeni yuvarlaqlasdirir => number.toPrecision(param)
+        */
+
+        var num = 8.36459;
+        
+        var prec0 = num.toPrecision();
+        var prec1 = num.toPrecision(1);
+        var prec2 = num.toPrecision(2);
+        var prec3 = num.toPrecision(3);
+        var prec4 = num.toPrecision(4);
+        var prec5 = num.toPrecision(5);
+
+        // toFixed - den ferqli olaraq parametr verilmeyende bu metodda ededin ozu geri donur
+        
+        document.write('<h1>' + num + ' no param => ' + prec0 + '</h1>');
+        document.write('<h1>' + num + ' as 1 => '     + prec1 + '</h1>');
+        document.write('<h1>' + num + ' as 2 => '     + prec2 + '</h1>');
+        document.write('<h1>' + num + ' as 3 => '     + prec3 + '</h1>');
+        document.write('<h1>' + num + ' as 4 => '     + prec4 + '</h1>');
+        document.write('<h1>' + num + ' as 5 => '     + prec5 + '</h1>');
+
+    </script>
+</body>
+</html>

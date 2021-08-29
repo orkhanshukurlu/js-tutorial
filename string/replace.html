@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Replace Method</title>
+</head>
+<body>
+
+    <script>
+
+        // String-de axtaris ederek bir sozu basqa sozle deyisdirir => str.replace("search", "newStr")
+
+        var str = 'Hello, I"am developer';
+
+        document.write('<h1> Original string => ' + str + '</h1>');
+
+        // Axtarilan "developer" sozu "teacher" sozuyle deyisdirilecek
+
+        var replace = str.replace('developer', 'teacher');
+
+        document.write('<h1> Replace string => ' + replace + '</h1>');
+
+        // Metod axtardigi sozu tapmirsa geriye orginal metni geri dondurur
+        // Axtarilan soz en az 2 defe istifade olunubsa , tapilan ilk soz deyisdirilir
+
+    </script>
+
+</body>
+</html>

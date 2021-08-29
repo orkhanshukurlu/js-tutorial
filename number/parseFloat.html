@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>ParseFloat Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Deyiseni vergullu edede cevirmek ucun isledilir => number.parseFloat(value)
+
+        var num1 = Number.parseFloat('10');          // 10
+        var num2 = Number.parseFloat('  32  ');      // 32
+        var num3 = Number.parseFloat('45 school');   // 45
+        var num4 = Number.parseFloat('Laravel 8.5'); // NAN
+        var num5 = Number.parseFloat('11 04 2019');  // 11
+        var num6 = Number.parseFloat('4.53');        // 4
+        var num7 = Number.parseFloat('00034');       // 34
+        var num8 = Number.parseFloat('29.0000');     // 29
+
+        document.write('<h1> "10" => '         + num1 + '</h1>');
+        document.write('<h1> "  32  " => '     + num2 + '</h1>');
+        document.write('<h1> 45 school => '    + num3 + '</h1>');
+        document.write('<h1> Laravel 8.5 => '  + num4 + '</h1>');
+        document.write('<h1> "11 04 2019" => ' + num5 + '</h1>');
+        document.write('<h1> 4,53 => '         + num6 + '</h1>');
+        document.write('<h1> 00034 => '        + num7 + '</h1>');
+        document.write('<h1> 29.0000 => '      + num8 + '</h1>');
+        
+    </script>
+</body>
+</html>

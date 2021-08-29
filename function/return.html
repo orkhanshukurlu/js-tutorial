@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Return</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Funksiyada geriye deyer dondurmek ucun istifade edilir ve bununla yanasi funksiyani bitirir
+            yeni return - den asagidaki kodlar islemir
+            => function func_name(...args)
+            {
+                some codes;
+                return value;
+            }
+        */
+
+        function hypotenuse(catet1, catet2)
+        {
+            var c = Math.sqrt(catet1**2 + catet2**2);
+
+            return c; // c-in qiymeti hesablanir ve funksiya hemin deyeri geri dondurur
+        }
+
+        var a = 3, b = 4;
+        var c = hypotenuse(a,b); // Katetleri 3 ve 4 olan ucbucagin hipotenuzu 5-dir
+
+        var res = '(' + a + '2'.sup() + '+' + b + '2'.sup() + ')' + '1/2'.sup() + '=' + c;
+
+        document.write('<h1>' + res + '</h1>');
+
+    </script>
+
+</body>
+</html>

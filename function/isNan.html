@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Is Nan Function</title>
+</head>
+<body>
+
+    <script>
+
+        // Deyisenin qeyri-qanuni (NaN) deyer olub olmadigini yoxlayir => isNaN("value")
+
+        var a = 123;          //false
+        var b = '123';        //false
+        var c = 'Hello';      //true
+        var d = '2005/12/12'; //true
+        var e = '';           //false
+        var f = true;         //false
+        var g = undefined;    //true
+        var h = NaN;          //true
+        var i = null;         //false
+
+        document.write('<h1>' + a + ' is Not a Number ? - ' + isNaN(a) + '</h1>');
+        document.write('<h1>' + b + ' is Not a Number ? - ' + isNaN(b) + '</h1>');
+        document.write('<h1>' + c + ' is Not a Number ? - ' + isNaN(c) + '</h1>');
+        document.write('<h1>' + d + ' is Not a Number ? - ' + isNaN(d) + '</h1>');
+        document.write('<h1>' + e + ' is Not a Number ? - ' + isNaN(e) + '</h1>');
+        document.write('<h1>' + f + ' is Not a Number ? - ' + isNaN(f) + '</h1>');
+        document.write('<h1>' + g + ' is Not a Number ? - ' + isNaN(g) + '</h1>');
+        document.write('<h1>' + h + ' is Not a Number ? - ' + isNaN(h) + '</h1>');
+        document.write('<h1>' + i + ' is Not a Number ? - ' + isNaN(i) + '</h1>');
+
+    </script>
+
+</body>
+</html>

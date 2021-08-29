@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Encode URI Function</title>
+</head>
+<body>
+    
+    <script>
+
+        // Url-deki mueyyen simvollari kodlayaraq Url-i Encode-a cevirir => encodeURI("url")
+        
+        var url    = 'my test.asp?name=ståle';
+        var encode = encodeURI(url);
+
+        document.write('<h1> Url => '    + url    + '</h1>');
+        document.write('<h1> Encode => ' + encode + '</h1>');
+
+    </script>
+</body>
+</html>

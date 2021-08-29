@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>setFullYear Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Ilin gununu deyisdirir => new Date().setFullYear(year)
+
+        var dt = new Date();
+
+        var normalYear = dt.getFullYear();
+
+        dt.setFullYear(1461);
+
+        var changeYear = dt.getFullYear();
+
+        document.write('<h1> Normal Year => ' + normalYear + '</h1>');
+        document.write('<h1> Change Year => ' + changeYear + '</h1>');
+        
+    </script>
+</body>
+</html>

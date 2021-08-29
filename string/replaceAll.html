@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>ReplaceAll Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            String-de axtaris ederek tapdigi butun sozleri basqa sozle deyisdirir
+            => str.replaceAll("search", "newStr")
+        */
+
+        var str = 'Inserts the portion of the string that follows the matched substring.';
+
+        document.write('<h1>Original string => ' + str + '</h1>');
+
+        // Tapdigi butun "the" sozlerini "THE" sozuyle deyisdirdi
+
+        var replaceAll = str.replaceAll('the', 'THE');
+
+        document.write('<h1> ReplaceAll string => ' + replaceAll + '</h1>');
+
+        // Metod axtardigi sozu tapmirsa geriye orginal metni geri dondurur
+        // Bu metod Replace-den ferqli olaraq tapdigi butun sozleri deyisdirir
+
+    </script>
+
+</body>
+</html>

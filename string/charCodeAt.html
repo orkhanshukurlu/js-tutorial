@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>CharCodeAt Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Parametr kimi verilen index-in qarsiligi olan simvolun Char kodunu geri dondurur
+            => string.charCodeAt(index)
+        */
+
+        var str = 'Hello, I am a developer';
+        
+        var code = str.charCodeAt(9); // 9 - indexine uygun deyer "a" , "a" - in Char kodu ise 97-dir
+
+        var symbol = str.charAt(9);
+
+
+        document.write("<h1>Value 9 index : " + symbol + " || Char Code '" + symbol + "' : " + code + "</h1>");
+
+        // Axtarilan indexe uygun soz tapilmayanda geriye "NaN" donur
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>IsArray Method</title>
+</head>
+<body>
+
+    <script>
+
+        // Deyisenin Array olub olmadigini yoxlayir => Array.isArray(variable)
+
+        var arr = [1,3,4];
+        var str = 'String';
+
+        Array.isArray(arr) ? document.write(arr + ' : is Array<br>') : document.write(arr + ' : not Array');
+
+        // arr deyiseni Array oldugu ucun geriye "true" donecek
+
+        Array.isArray(str) ? document.write(str + ' : is Array') : document.write(str + ' : is not Array');
+
+        // str deyiseni Array olmadigi ucun geriye "false" donecek
+
+    </script>
+
+</body>
+</html>

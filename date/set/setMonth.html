@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>setMonth Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Ayi deyisdirir => new Date().setMonth(month) -> month [0;11]
+
+        var dt = new Date();
+
+        var normalMonth = dt.getMonth();
+
+        dt.setMonth(10); // 11 th month (November)
+
+        var changeMonth = dt.getMonth();
+
+        document.write('<h1> Normal Month => ' + normalMonth + '</h1>');
+        document.write('<h1> Change Month => ' + changeMonth + '</h1>');
+        
+    </script>
+</body>
+</html>

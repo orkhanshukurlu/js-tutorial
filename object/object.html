@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Objects</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+            Object-ler mueyyen seylerin ozelliklerini ve onlarin deyerlerini tanimlamaq ucun isledilir
+            obj_name = {
+                key: value
+            }
+        */
+
+        var car = {
+
+            name:   'Mercedes',
+            marca:  'Benz',
+            length: '54000 km'
+        };
+
+        console.log(car); // {name: "Mercedes", marca: "Benz", length: "54000 km"}
+
+        // Object-in hansisa ozelliyini 2 yolla cagirmaq olur
+
+        var name  = car.name;
+        var marca = car['marca'];
+
+        document.write('<h1> Fullname of car => ' + name + ' ' + marca + '</h1>');
+        
+        // Yeni bir Object yaratmaq
+
+        var car2 = new Object();
+
+        car2.name   = 'Nissan';
+        car2.marca  = 'Sunny';
+        car2.length = '43210 km';
+
+        console.log(car2); // {name: "Nissan", marca: "Sunny", length: "43210 km"}
+        
+    </script>
+</body>
+</html>

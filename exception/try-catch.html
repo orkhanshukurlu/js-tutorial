@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Try Catch</title>
+</head>
+<body>
+
+    <script>
+
+        // Try-de xeta varsa Catch blokunda xeta elde edilir
+
+        try
+        {
+            alertify('Try message');
+        }
+        
+        catch(err)
+        {
+            document.write('<h1>Error => ' + err + '</h1>');
+
+            // Errorun adi => err.name , Errorun metni => err.message
+
+            document.write('<h2>Error Name : ' + err.name + '</h2>');
+            document.write('<h2>Error Message : ' + err.message + '</h2>');
+        }
+
+    </script>
+
+</body>
+</html>

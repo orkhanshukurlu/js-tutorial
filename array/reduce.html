@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Reduce Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Array elementlerinin uzerinde mueyyen emeliyyat yerine yetirir ve tek bir cavab geriye dondurur
+            => array.reduce(function_name)
+        */
+
+        var pow = (a, b) => a * b;
+
+        var arr = [4,5,7];
+
+        var reduce = arr.reduce(pow); // Array-in elementlerinin hasilin geri dondurdu 4 * 5 * 7 => 140
+
+        document.write('<h1> Multiple [4, 5, 7] => ' + reduce + '</h1>');
+
+    </script>
+
+</body>
+</html>

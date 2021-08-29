@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Keys Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Array-in key-lerinden (indexlerinden) ibarek yeni bir Array Iterator obyekti geri dondurur
+            => array.keys()
+        */
+
+        var arr = ['a', 'b', 'c'];
+
+        var iterator = arr.keys();
+
+        for (var key of iterator)
+        {
+            document.write('<h1>' + key + '</h1>'); // Array-in key-lerin geri dondurur => 0, 1, 2
+        }
+
+        // Metodda geriye donen obyekti ancaq donguye salaraq (iterasiya ile) isletmek lazimdi
+
+    </script>
+
+</body>
+</html>

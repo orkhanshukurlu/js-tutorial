@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>setHours Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Saati deyisdirir => new Date().setHours(hour) -> hour [0;23]
+
+        var dt = new Date();
+
+        var normalHour = dt.getHours();
+
+        dt.setHours(3);
+
+        var changeHour = dt.getHours();
+
+        document.write('<h1> Normal Hour => ' + normalHour + '</h1>');
+        document.write('<h1> Change Hour => ' + changeHour + '</h1>');
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Abs Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Ededin mutleq deyerini (modulunu) geri dondurur => Math.abs(value)
+
+        var num1 = '-1';     // 1
+        var num2 = -2;       // 2
+        var num3 = null;     // 0
+        var num4 = '';       // 0
+        var num5 = [];       // 0
+        var num6 = [2];
+        var num7 = [1,2];
+        var num8 = {};
+        var num9 = 'str';
+
+        var abs1 = Math.abs(num1); // 1
+        var abs2 = Math.abs(num2); // 2
+        var abs3 = Math.abs(num3); // 0
+        var abs4 = Math.abs(num4); // 0
+        var abs5 = Math.abs(num5); // 0
+        var abs6 = Math.abs(num6); // 2
+        var abs7 = Math.abs(num7); // NaN
+        var abs8 = Math.abs(num8); // NaN
+        var abs9 = Math.abs(num9); // NaN
+
+        document.write('<h1> Abolute (' + num1 + ') => ' + abs1 + '</h1>');
+        document.write('<h1> Abolute (' + num2 + ') => ' + abs2 + '</h1>');
+        document.write('<h1> Abolute (' + num3 + ') => ' + abs3 + '</h1>');
+        document.write('<h1> Abolute (' + num4 + ') => ' + abs4 + '</h1>');
+        document.write('<h1> Abolute (' + num5 + ') => ' + abs5 + '</h1>');
+        document.write('<h1> Abolute (' + num6 + ') => ' + abs6 + '</h1>');
+        document.write('<h1> Abolute (' + num7 + ') => ' + abs7 + '</h1>');
+        document.write('<h1> Abolute (' + num8 + ') => ' + abs8 + '</h1>');
+        document.write('<h1> Abolute (' + num9 + ') => ' + abs9 + '</h1>');
+
+    </script>
+</body>
+</html>

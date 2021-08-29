@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Join Method</title>
+</head>
+<body>
+
+    <script>
+
+        // Array elementlerini mueyyen simvola gore ayirir ve metne cevirir => array.join("seperator")
+
+        var arr  = ['Html', 'Css', 'Javascript'];
+
+        var join = arr.join(' | '); // " | " - simvoluna gore Array elementlerini ayirir
+        var type = typeof join;     // Ayrica gore metne cevirdiyi ucun deyisenin tipi "string" olacaq
+
+        document.write('<h1>Join => ' + join + '<br>Type => ' + type + '</h1>');
+
+    </script>
+
+</body>
+</html>

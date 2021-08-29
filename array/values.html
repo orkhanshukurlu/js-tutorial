@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Values Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Array-in deyerlerinden ibarek yeni bir Array Iterator obyekti geri dondurur
+            => array.values()
+        */
+
+        var arr = ['a', 'b', 'c'];
+
+        var iterator = arr.values();
+
+        for (var values of iterator)
+        {
+            document.write('<h1>' + values + '</h1>'); // Array-in deyerlerin geri dondurur => a, b, c
+        }
+
+        // Metodda geriye donen obyekti ancaq donguye salaraq (iterasiya ile) isletmek lazimdi
+
+    </script>
+
+</body>
+</html>

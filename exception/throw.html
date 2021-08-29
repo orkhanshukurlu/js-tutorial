@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Try Catch Throw</title>
+</head>
+<body>
+
+    <script>
+
+        // Throw => Sert odenilerse throw isleyir ve Catch-de bizim oz yazdigimiz error-u cap edirik
+
+        var num = prompt('Enter the natural number');
+
+        try
+        {
+            if(isNaN(num))
+            {
+                throw 'Value is a not number';
+            }
+        }
+        
+        catch(err)
+        {
+            document.write('<h1>My error message => ' + err + '</h1>');
+        }
+
+    </script>
+
+</body>
+</html>

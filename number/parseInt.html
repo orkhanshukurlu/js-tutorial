@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>ParseInt Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Deyiseni tam edede cevirmek ucun isledilir => number.parseInt(value)
+
+        var num1 = Number.parseInt('10');          // 10
+        var num2 = Number.parseInt('  32  ');      // 32
+        var num3 = Number.parseInt('45 school');   // 45
+        var num4 = Number.parseInt('Laravel 8.5'); // NAN
+        var num5 = Number.parseInt('11 04 2019');  // 11
+        var num6 = Number.parseInt('4.53');        // 4
+        var num7 = Number.parseInt('00034');       // 34
+        var num8 = Number.parseInt('29.0000');     // 29
+
+        document.write('<h1> "10" => '         + num1 + '</h1>');
+        document.write('<h1> "  32  " => '     + num2 + '</h1>');
+        document.write('<h1> 45 school => '    + num3 + '</h1>');
+        document.write('<h1> Laravel 8.5 => '  + num4 + '</h1>');
+        document.write('<h1> "11 04 2019" => ' + num5 + '</h1>');
+        document.write('<h1> 4,53 => '         + num6 + '</h1>');
+        document.write('<h1> 00034 => '        + num7 + '</h1>');
+        document.write('<h1> 29.0000 => '      + num8 + '</h1>');
+
+        // Bu metodla ededin say sistemindeki qarsiligini da geri dondurmek olur
+
+        var number = '13';
+        var result = '<br>';
+
+        var num2  = parseInt(number, 2);
+        var num4  = parseInt(number, 4);
+        var num8  = parseInt(number, 8);
+        var num16 = parseInt(number, 16);
+
+        result += '<h1> 11 to Binary (2) => '       + num2  + '</h1>';
+        result += '<h1> 11 to Quaternary (4) => '   + num4  + '</h1>';
+        result += '<h1> 11 to Octal (8) => '        + num8  + '</h1>';
+        result += '<h1> 11 to Hexadecimal (16) => ' + num16 + '</h1>';
+
+        document.write(result);
+        
+    </script>
+</body>
+</html>

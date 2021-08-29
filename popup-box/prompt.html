@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Prompt Method</title>
+</head>
+<body>
+
+    <script>
+
+        // Icine yazilan yazi hemise string tipindedi
+
+        var user = prompt('Enter username');
+        var pass = prompt('Enter password');
+
+        if(user != '' && user != null && pass != '' && pass != null)
+        {
+            alert('Username : ' + user + ' , Password : ' + pass);
+        }
+
+        else if(user == null || pass == null)
+        {
+            alert('Please try again');
+        }
+
+        else
+        {
+            alert('Username or Password is required');
+        }
+    
+    </script>
+
+</body>
+</html>
