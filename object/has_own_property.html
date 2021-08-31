@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>HasOwnProperty Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Object-in her hansisa ozelliyinin olub olmadigini yoxlayir ve "boolean" deyer dondurur 
+            => objectName.hasOwnProperty('propertyName');
+        */
+
+        var person = {name: 'Orkhan'};
+
+        var nameCheck = person.hasOwnProperty('name'); // name oldugu ucun "true" deyeri donecek
+        var ageCheck  = person.hasOwnProperty('age');  // age olmadigi ucun "false" deyeri donecek
+
+        nameCheck ? document.write('Name property-si var') : document.write('Name property-si yoxdur');
+
+        document.write('<br>');
+
+        ageCheck ? document.write('Age property-si var') : document.write('Age property-si yoxdur');
+
+    </script>
+
+</body>
+</html>

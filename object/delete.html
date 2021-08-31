@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Delete Method</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            Object-in her hansisa ozelliyinin deyerini silir ve "boolean" deyer dondurur 
+            => delete obj.property
+        */
+
+        var person = {name: 'Orkhan', age: 24};
+
+        console.log(person); // Object-in ilkin hali
+
+        delete person.age; // Object-in age ozelliyini sildi ve geriye "true" deyeri dondurdu
+
+        console.log(person.age);
+
+        // Metod object-in ozelliyini tam silmir . Yox edir ve deyerini temizleyir , deyeri "undefined" olur
+
+        document.write('Age property => ' + person.age); // undefined
+
+    </script>
+
+</body>
+</html>

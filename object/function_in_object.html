@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Function in Object</title>
+</head>
+<body>
+    
+    <script>
+
+        // Object-in daxilinde funksiya istifade etmek mumkundur
+
+        var person = {
+
+            firstname: 'Orkhan',
+            lastname: 'Shukurlu',
+            fullname: function()
+            {
+                return this.firstname + ' ' + this.lastname;
+            }
+        };
+
+        // Ilkin halda funksiyani cagirmaq
+
+        document.write('Fullname : ' + person.fullname() + '<br>'); // Orkhan Shukurlu
+
+        person.firstname = 'John';
+        person.lastname  = 'Doe';
+
+        // Deyeri deyisennen sonra funskiyani cagirmaq
+
+        document.write('Fullname : ' + person.fullname()); // John Doe
+        
+    </script>
+</body>
+</html>
