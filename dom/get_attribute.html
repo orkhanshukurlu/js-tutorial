@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Get Attribute Method</title>
+</head>
+<body>
+
+    <a href="github.com" class="link-cls" id="link-id" target="_blank">Link</a>
+    <button onclick="getAttr();">Get Attribute</button>
+
+    <script>
+
+        // Html elementinin hansisa attributunu goturmek ucun isledilir => getAttribute('attr_name');
+
+        function getAttr()
+        {
+            var link = document.getElementsByTagName('a')[0];
+
+            var href   = link.getAttribute('href');
+            var cls    = link.getAttribute('class');
+            var id     = link.getAttribute('id');
+            var target = link.getAttribute('target');
+
+            // Elementin href , class , id ve target attributunu goturduk
+
+            document.write('Href : '   + href + '<br>'); // github.com
+            document.write('Class : '  + cls  + '<br>'); // link-cls
+            document.write('ID : '     + id   + '<br>'); // link-id
+            document.write('Target : ' + target);        // _blank
+        }
+    
+    </script>
+
+</body>
+</html>

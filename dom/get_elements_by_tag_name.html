@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Get Elements By Tag Name Method</title>
+</head>
+<body>
+
+    <ul>
+        <li>Javascript</li>
+        <li>React JS</li>
+        <li>Jquery</li>
+    </ul>
+    
+    <script>
+
+        // HTML teqine gore HTML elementini getirir => document.getElementsByTagName('tag');
+
+        var listAll = document.getElementsByTagName('li');
+        var listOne = document.getElementsByTagName('li')[1];
+
+        console.log(listAll); // 3 dene li elementini geri dondurur
+        console.log(listOne); // <li>React JS</li> ve ya hemin elementin melumatlari geri donur
+
+        listOne.id          = 'react';      // elemente id veririk
+        listOne.style.color = 'dodgerblue'; // elementin text-ine reng veririk
+
+        // <li id="react" style="color: dodgerblue;">React JS</li>
+        
+    </script>
+</body>
+</html>

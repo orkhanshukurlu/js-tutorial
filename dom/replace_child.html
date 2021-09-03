@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Replace Child Method</title>
+</head>
+<body>
+
+    <button onclick="rpChild();">Replace Child</button>
+
+    <ul id="list"><li>Element 1</li><li>Element 2</li><li>Element 3</li></ul>
+
+    <script>
+
+        // Html elementini deyisdirmek ucun istifade edilir => elem.replaceChild(elem);
+
+        function rpChild()
+        {
+            var text = document.createTextNode('Replace element');    // Yeni bir text yaradiriq
+            var list = document.getElementById('list').childNodes[0]; // 1-ci li elementini gotururuk       
+
+            list.replaceChild(text, list.childNodes[0]);
+
+            // 1-ci li elementinin ici text deyisenin deyeri olur
+            
+            /*
+                Append child ve Replace child metodlari html elementleri asagidaki kimi olanda isleyir
+                <ul id="list"><li>Element 1</li><li>Element 2</li><li>Element 3</li></ul>
+
+                Asagidaki kimi olanda error verir
+                <ul id="list">
+                    <li>Element 1</li>
+                    <li>Element 2</li>
+                    <li>Element 3</li>
+                </ul>
+            */
+        }
+    
+    </script>
+
+</body>
+</html>

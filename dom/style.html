@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Style Method</title>
+</head>
+<body>
+
+    <button onclick="addStyle();">Add Style</button>
+    <button onclick="addMultipleStyle();">Add Multiple Style</button>
+
+    <div id="text">Text</div>
+    <div id="multiple">Multiple</div>
+
+    <script>
+
+        // Html elementinin stillerini deyisdirmek ucun isledilir => style.cssProperty
+
+        function addStyle()
+        {
+            // Elementin CSS-ni tek tek deyisdirdik
+
+            document.getElementById('text').style.background = 'red';
+            document.getElementById('text').style.color      = 'white';
+            document.getElementById('text').style.padding    = '10px';
+        }
+
+        function addMultipleStyle()
+        {
+            // Elementin CSS-ni tek setirde deyisdirdik
+
+            document.getElementById('multiple').style.cssText = 'padding: 20px; background: dodgerblue';
+        }
+    
+    </script>
+
+</body>
+</html>

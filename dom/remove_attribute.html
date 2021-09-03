@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Remove Attribute Method</title>
+</head>
+<body>
+
+    <a href="github.com" class="link-cls">Link</a>
+    <button onclick="removeAttr();">Remove Attribute</button>
+
+    <script>
+
+        // Html elementinin hansisa attributunu silmek ucun isledilir => removeAttribute('attr_name');
+
+        function removeAttr()
+        {
+            var link = document.getElementsByTagName('a')[0];
+
+            link.removeAttribute('href');
+
+            // Elementin href attributunu sildik
+        }
+    
+    </script>
+
+</body>
+</html>

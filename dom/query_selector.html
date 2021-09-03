@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Query Selector Method</title>
+</head>
+<body>
+
+    <ul id="list">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+    </ul>
+
+    <script>
+
+        /*
+            Html elementini secmek ucun istifade edilir ve tapdigi ilk deyeri geri dondurur
+            => elem.querySelector(choosen);
+        */
+
+        var el = document.querySelector('#list li'); // list id-li elementin icindeki ilk li-ni secdik
+
+        el.style.background = 'red';       // Arxaplan rengini qirmizi eledik
+        el.style.padding    = '15px 25px'; // Yuxarida 15px sagdan soldan 25px padding verdik
+        el.style.fontSize   = '20px';      // Yazi olcusunu 20px eledik
+    
+    </script>
+
+</body>
+</html>

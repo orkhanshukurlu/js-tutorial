@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Create Element Method</title>
+</head>
+<body>
+
+    <button onclick="addElem();">Create Element</button>
+    <div id="box"></div>
+
+    <script>
+
+        // Yeni bir HTML elementi yaradir => document.createElement("tag"); 
+
+        function addElem()
+        {
+            var text = document.createElement('p');
+            text.innerText = 'Hello world !!!';
+
+            document.getElementById('box').appendChild(text);
+
+            // id-si box olan divin icine yeni yaratdigimiz 'p' elementini elave etdik
+        }
+    
+    </script>
+
+</body>
+</html>

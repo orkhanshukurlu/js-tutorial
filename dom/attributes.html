@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Attributes Method</title>
+</head>
+<body>
+
+    <a href="github.com" class="link-cls" id="link-id" target="_blank">Link</a>
+
+    <script>
+
+        // Html elementinin butun attributlarini geri dondurur => attributes
+
+        var link = document.getElementsByTagName('a')[0];
+        var attr = link.attributes;
+
+        console.log(attr);
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Append Child Method</title>
+</head>
+<body>
+
+    <button onclick="apChild();">Append Child</button>
+
+    <ul id="list">
+        <li>Element</li>
+    </ul>
+
+    <script>
+
+        // Html elementine yeni element elave etmek ucun isledilir => elem.appendChild(elem);
+
+        function apChild()
+        {
+            var list = document.getElementById('list');
+
+            var newElem = document.createElement('li');              // Yeni li elementi yaradiriq
+            var newText = document.createTextNode('Append element'); // Yeni bir text yaradiriq
+
+            newElem.appendChild(newText); // li elementine texti elave edirik
+            list.appendChild(newElem);    // id-si list oland ul-e yeni li elementi elave edirik
+        }
+    
+    </script>
+
+</body>
+</html>

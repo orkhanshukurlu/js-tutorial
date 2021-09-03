@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Has Attribute Method</title>
+</head>
+<body>
+
+    <a>Go to link</a>
+    <button onclick="setAttr();">Set Attribute</button>
+
+    <script>
+
+        // Html elementinin hansisa attributunun olub olmadigini yoxlayir => hasAttribute('attr_name');
+
+        function setAttr()
+        {
+            var link = document.getElementsByTagName('a')[0];
+
+            if(!link.hasAttribute('href'))
+            {
+                link.setAttribute('href',  'facebook.com');
+            }
+
+            // href attributunu yoxladiq , yoxdursa elemente href attributu verdik
+        }
+    
+    </script>
+
+</body>
+</html>

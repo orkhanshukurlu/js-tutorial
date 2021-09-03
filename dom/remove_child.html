@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Remove Child Method</title>
+</head>
+<body>
+
+    <button onclick="rmChild();">Remove Child</button>
+
+    <ul id="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <script>
+
+        // Html elementini silmek ucun isledilir => elem.removeChild(elem.childNodes[index]);
+
+        function rmChild()
+        {
+            var list = document.getElementById('list');
+
+            list.removeChild(list.childNodes[0]); // 0 index-li li elementini silirik
+
+            // childNodes ul-in child elementlerini getirmek ucun istifade edilir
+        }
+    
+    </script>
+
+</body>
+</html>

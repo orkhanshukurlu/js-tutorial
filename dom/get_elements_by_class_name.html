@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Get Elements By Class Name Method</title>
+</head>
+<body>
+
+    <input type="text" class="input_text"><br><br>
+    <input type="text" class="input_text"><br><br>
+    
+    <script>
+
+        // Class adina gore HTML elementini getirir => document.getElementsByClassName('class');
+
+        var inputAll = document.getElementsByClassName('input_text');
+        var inputOne = document.getElementsByClassName('input_text')[0];
+
+        console.log(inputAll); // 2 dene input elementini geri dondurur
+        console.log(inputOne); // <input type="text" class="input_text"> ve ya hemin elementin melumatlari geri donur
+
+        inputOne.placeholder  = 'Please enter the text'; // elemente placeholder veririk
+        inputOne.style.border = '1px solid blue';        // elemente border veririk
+
+        // <input type="text" class="input_text" placeholder="Please enter the text" style="border: 1px solid blue;">
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Add Event Listener Method</title>
+</head>
+<body>
+
+    <h2 id="title">Clicked Me</h2>
+    
+    <script>
+
+        /*
+            HTML elementinde hansisa hadise bas verdikde funksiya ile elemente tesir etmek ucun
+            istifade edilir => document.addEventListener('event_name', function(){...});
+        */
+
+        var title = document.getElementById('title');
+
+        title.addEventListener('click', function()
+        {
+            alert('Clicked to H2');
+        });
+        
+    </script>
+</body>
+</html>

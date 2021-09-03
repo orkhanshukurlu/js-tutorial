@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Query Selector All Method</title>
+</head>
+<body>
+
+    <ul id="list">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+    </ul>
+
+    <script>
+
+        /*
+            Html elementini secmek ucun istifade edilir ve tapdigi butun deyerleri geri dondurur
+            => elem.querySelectorAll(choosen);
+        */
+
+        var el = document.querySelectorAll('#list li'); // list id-li elementin icindeki li-leri secdi
+
+        for(var i = 0; i < el.length; i++)
+        {
+            el[i].style.background = 'red';       // Arxaplan rengini qirmizi eledik
+            el[i].style.padding    = '15px 25px'; // Yuxarida 15px sagdan soldan 25px padding verdik
+            el[i].style.fontSize   = '20px';      // Yazi olcusunu 20px eledik
+        }
+
+        // 3 dene element tapdigi ucun for ile dondurub her elementin css-ni deyisdik
+    
+    </script>
+
+</body>
+</html>

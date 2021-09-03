@@ -12,7 +12,11 @@
 
     <div id="text"></div>
 
+    <p id="paragraph">Hello <span>world</span></p>
+
     <script>
+
+        // Html elementinin icerisini goturmek ve ya deyisdirmek ucun isledilir => innerHTML
 
         function addHtml()
         {
@@ -20,6 +24,8 @@
             
             document.getElementById('text').innerHTML += '<p>Hello world !</p>';
         }
+
+        console.log(document.getElementById('paragraph').innerHTML); // Hello <span>world</span>
     
     </script>
 

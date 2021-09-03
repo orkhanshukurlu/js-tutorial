@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Set Attribute Method</title>
+</head>
+<body>
+
+    <a>Go to link</a>
+    <button onclick="setAttr();">Set Attribute</button>
+
+    <script>
+
+        // Html elementine attributlar vermek ucun isledilir => setAttribute('attr_name', 'attr_value');
+
+        function setAttr()
+        {
+            var link = document.getElementsByTagName('a')[0];
+
+            link.setAttribute('href',  'google.com');
+            link.setAttribute('class',  'link');
+            link.setAttribute('traget', '_blank');
+
+            // Elemente href , class ve target attributlari verdik
+        }
+    
+    </script>
+
+</body>
+</html>
