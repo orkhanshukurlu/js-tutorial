@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Detail Event</title>
+</head>
+<body>
+
+    <button id="btn" style="padding: 8px">Click</button>
+    <span id="result" style="font-size: 16px"></span>
+    
+    <script>
+
+        // Eyni sahede nece defe arxa arxaya klik olundugu geri dondurur => event.detail
+
+        document.getElementById('btn').onclick = function()
+        {
+            document.getElementById('result').innerHTML = event.detail + ' defe kliklendi';
+
+            // Elementden basqa yere klikleyib , yeniden elemente klikleyende saygac 0-dan baslayir
+        }
+
+    </script>
+
+</body>
+</html>

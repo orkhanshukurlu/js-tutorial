@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Confirm Box</title>
+</head>
+<body>
+
+    <button id="btn" onclick="conf()">Click</button>
+    
+    <script>
+
+        // Istifadecinin 2 secimden birini secmeyi ucun istifade edilir => confirm('msg')
+
+        function conf()
+        {
+            var check = confirm('Yasiniz 18-den boyukdur ???');
+
+            check ? alert('Yasiniz 18 den boyukdur') : alert('Yasiniz 18 den kicikdir');
+
+            // Istifadeci OK elese birinci alert , Cancel elese ikinci alert gorunecek
+        }
+
+    </script>
+
+</body>
+</html>

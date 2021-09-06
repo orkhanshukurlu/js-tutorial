@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnInput Event</title>
+</head>
+<body>
+
+    <input type="text" id="text">
+    <span id="result"></span>
+    
+    <script>
+
+        // Inputa deyer daxil etdikde ve ya sildikde bas veren eventdir => elem.oninput = function(){ ... }
+
+        document.getElementById('text').oninput = function()
+        {
+            var text = document.getElementById('text').value;
+            document.getElementById('result').innerHTML = 'Daxil etdiyiniz soz : ' + text;
+        }
+
+    </script>
+
+</body>
+</html>

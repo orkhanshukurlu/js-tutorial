@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnKeyUp Event</title>
+</head>
+<body>
+
+    <input type="text">
+    <span id="result"></span>
+    
+    <script>
+
+        // Klaviaturanin duymesi sixilib buraxilan anda bas veren eventdir => elem.onkeyup = function(){ ... }
+
+        document.querySelector('input').onkeyup = function()
+        {
+            var result = document.getElementById('result');
+            result.innerHTML = this.value; // this bu demekdir => document.querySelector('input')
+        }
+
+        // 'abc' => 'abc' . Event duyme sixilib buraxilan anda islediyi ucun yazilan her simvolu goturur
+
+    </script>
+
+</body>
+</html>

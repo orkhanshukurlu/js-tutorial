@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnMouseOut Event</title>
+</head>
+<body>
+
+    <div style="width: 500px; height: 100px; background-color: crimson;" id="box"></div>
+    
+    <script>
+
+        // Miska ile elementin uzerinden kenara cixanda isleyen eventdir => elem.onmouseout = function(){ ... }
+
+        document.getElementById('box').onmouseout = function()
+        {
+            alert('Mouse Out');
+        }
+
+    </script>
+
+</body>
+</html>

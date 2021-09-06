@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Which Method</title>
+</head>
+<body>
+
+    <input type="text" id="text">
+    <span id="result" style="font-size: 16px"></span>
+    
+    <script>
+
+        // Sixilan duymenin Unicode simvol kodunu geri dondurur => event.which
+
+        document.getElementById('text').onkeypress = function()
+        {
+            document.getElementById('result').innerHTML = 'Sixdigin duymenin kodu : ' + event.which;
+        }
+
+    </script>
+
+</body>
+</html>

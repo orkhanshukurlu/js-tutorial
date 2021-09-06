@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnLoad Event</title>
+</head>
+<body>
+
+    <iframe src="https://google.com" id="frame"></iframe>
+    <h3 id="result"></h3>
+    
+    <script>
+
+        // Sehife ve ya element tam yuklenenden sonra bas veren eventdir => elem.onload = function(){ ... }
+
+        document.getElementById('frame').onload = function()
+        {
+            document.getElementById('result').innerHTML = 'Sehife yuklendi';
+        }
+
+        // Eventin sehifenin tam yuklenenden sonra islemeyi ucun => window.onload
+
+    </script>
+
+</body>
+</html>

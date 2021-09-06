@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnKeyDown Event</title>
+</head>
+<body>
+
+    <input type="text">
+    <span id="result"></span>
+    
+    <script>
+
+        // Klaviaturanin duymesini sixdigimiz anda bas veren eventdir => elem.onkeydown = function(){ ... }
+
+        document.querySelector('input').onkeydown = function()
+        {
+            var result = document.getElementById('result');
+            result.innerHTML = this.value; // this bu demekdir => document.querySelector('input')
+        }
+
+        // 'abc' => 'ab' . Event duyme sixildigi anda islediyi ucun 'c' simvolunu goture bilmir
+
+    </script>
+
+</body>
+</html>

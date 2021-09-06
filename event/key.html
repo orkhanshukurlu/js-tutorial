@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Key Method</title>
+</head>
+<body>
+
+    <input type="text" id="text">
+    <span id="result" style="font-size: 16px"></span>
+    
+    <script>
+
+        // Klaviaturada sixilan duymenin hansi duyme oldugunu string kimi geri dondurur => event.key
+
+        document.getElementById('text').onkeydown = function()
+        {
+            document.getElementById('result').innerHTML = 'Sixdigin duymenin : ' + event.key;
+        }
+
+    </script>
+
+</body>
+</html>

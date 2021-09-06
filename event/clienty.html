@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>ClientY Event</title>
+</head>
+<body>
+
+    <span id="result" style="font-size: 16px"></span>
+
+    <div style="width: 100%; height: 500px; background-color: forestgreen;" id="box"></div>
+    
+    <script>
+
+        // Y kordinatini (yuxaridan hemin yere qeder olan mesafe) px ile geri dondurur => event.clientY
+
+        document.getElementById('box').onclick = function()
+        {
+            document.getElementById('result').innerHTML = 'Y cordinate : ' + event.clientY;
+        }
+
+    </script>
+
+</body>
+</html>

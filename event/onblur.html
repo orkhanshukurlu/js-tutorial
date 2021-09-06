@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnBlur Event</title>
+</head>
+<body>
+
+    <input type="text" id="text">
+    <span id="result" style="font-size: 16px"></span>
+    
+    <script>
+
+        /*
+            Inputu terk ederken bas veren eventdir . Yeni , inputa fokus olan halda basqa bir yere
+            kecerken (klikleyerken ve ya TAB-la basqa inputa kecerken) bu event isleyir 
+            => elem.onblur = function{ ... }
+        */
+
+        document.getElementById('text').onblur = function()
+        {
+            var text = document.getElementById('text').value;
+            document.getElementById('result').innerHTML = 'Daxil etdiyiniz soz : ' + text;
+        }
+
+    </script>
+
+</body>
+</html>

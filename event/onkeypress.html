@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnKeyPress Event</title>
+</head>
+<body>
+
+    <input type="text">
+    <span id="result"></span>
+    
+    <script>
+
+        /*
+            Klaviaturanin duymesini sixdigimiz ve ya basili saxladigimiz anda bas veren eventdir 
+            => elem.onkeypress = function(){ ... }
+        */
+
+        document.querySelector('input').onkeypress = function()
+        {
+            var result = document.getElementById('result');
+            result.innerHTML = this.value; // this bu demekdir => document.querySelector('input')
+        }
+
+        /*
+            'abc' => 'ab' . Event duyme sixildigi ve ya basili saxlanilan anda islediyi ucun 'c' simvolunu 
+            goture bilmir . KeyDown-la ferqi odur ki bu event duyme basili qalanda da isleyir
+        */
+
+    </script>
+
+</body>
+</html>

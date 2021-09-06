@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnDblclick Event</title>
+</head>
+<body>
+
+    <button id="btn">Click me</button>
+    
+    <script>
+
+        // Elemente 2 defe basanda isleyen eventdir => elem.ondblclick = function(){ ... }
+
+        document.getElementById('btn').ondblclick = function()
+        {
+            alert('You are double clicked');
+        }
+
+    </script>
+
+</body>
+</html>

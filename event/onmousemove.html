@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnMouseMove Event</title>
+</head>
+<body>
+
+    <div style="width: 500px; height: 300px; background-color: crimson;" id="box"></div>
+    <h3 id="result"></h3>
+    
+    <script>
+
+        // Miska ile elementin uzerinde gezende isleyen eventdir => elem.onmousemove = function(){ ... }
+
+        document.getElementById('box').onmousemove = function()
+        {
+            var x = event.clientX; // X oxunun uzunlugunu verir (px ile)
+            var y = event.clientY; // Y oxunun uzunlugunu verir (px ile)
+
+            document.getElementById('result').innerHTML = "Cordinate (" + x + " , " + y + ")";
+        }
+
+    </script>
+
+</body>
+</html>

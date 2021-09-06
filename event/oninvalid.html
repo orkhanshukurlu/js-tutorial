@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnInvalid Event</title>
+</head>
+<body>
+
+    <form>
+        <input type="text" oninvalid="req_input()" required>
+        <input type="submit" value="Send">
+    </form>
+    
+    <script>
+
+        /*
+            Required parametri olan input form gonderilerken bos gonderildikde bas veren eventdir 
+            => elem.oninvalid = function(){ ... }
+        */
+
+        function req_input()
+        {
+            alert('Zehmet olmasa bos saheni doldurun');
+        }
+
+    </script>
+
+</body>
+</html>

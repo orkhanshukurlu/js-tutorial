@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
-    <title>Alert Box</title>
+    <title>Onclick Event</title>
 </head>
 <body>
+
+    <button id="btn">Click me</button>
     
     <script>
 
-        // Istifadeciye bildiris gostermek ucun isledilir . Yalniz "OK" buttonu var => alert('msg')
-        
-        alert('Alert Box');
+        // Elemente basanda isleyen eventdir => elem.onclick = function(){ ... }
+
+        document.getElementById('btn').onclick = function()
+        {
+            alert('You are clicked');
+        }
 
     </script>
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnReset Event</title>
+</head>
+<body>
+
+    <form onreset="reset_form()">
+        <input type="text">
+        <input type="reset" value="Reset">
+    </form>
+    
+    <script>
+
+        // Form resetlenerken (temizlenerken) bas veren eventdir => elem.onreset = function(){ ... }
+
+        function reset_form()
+        {
+            alert('Form resetlendi');
+        }
+
+        // Eventi form teqinin ozune vermek lazimdi , reset butonuna yox
+
+    </script>
+
+</body>
+</html>

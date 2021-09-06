@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnFocus Event</title>
+</head>
+<body>
+
+    <input type="text" id="text" onfocus="_focus()" onblur="_blur()">
+    <span id="result" style="font-size: 16px"></span>
+    
+    <script>
+
+        // Inputa nese yazmaq ucun girende (fokuslananda) isleyen eventdir => elem.onfocus = function{ ... }
+
+        function _focus()
+        {
+            document.getElementById('result').innerHTML = 'Inputa fokuslandi';
+        }
+
+        function _blur()
+        {
+            document.getElementById('result').innerHTML = '';
+        }
+
+    </script>
+
+</body>
+</html>

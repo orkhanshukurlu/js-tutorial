@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnContextMenu Event</title>
+</head>
+<body>
+
+    <button id="btn">Click me</button>
+    
+    <script>
+
+        /*
+            Elemente sag klikleyende (miskanin sag duymesini sixdiqda) isleyen eventdir 
+            => elem.oncontextmenu = function(){ ... }
+        */
+
+        document.getElementById('btn').oncontextmenu = function()
+        {
+            alert('You are right clicked');
+        }
+
+    </script>
+
+</body>
+</html>

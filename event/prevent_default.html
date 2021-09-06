@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>PreventDefault Event</title>
+</head>
+<body>
+
+    <a href="https://google.com" id="link">Go to Google</a>
+    
+    <script>
+
+        // Bir event bas vererken edeceyi emeliyyatlari legv etmek ucun isledilir => event.preventDefault();
+
+        var link = document.getElementById('link');
+
+        link.addEventListener('click', function()
+        {
+            event.preventDefault();
+        });
+
+    </script>
+
+</body>
+</html>

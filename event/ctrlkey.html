@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>CtrlKey Event</title>
+</head>
+<body>
+
+    <button id="btn" style="padding: 8px">Click me</button>
+    <span id="result" style="font-size: 16px"></span>
+    
+    <script>
+
+        // Bir event bas vererken CTRL duymesinin sixilib sixilmadigini yoxlayir => event.ctrlKey
+
+        document.getElementById('btn').onclick = function()
+        {
+            if(event.ctrlKey)
+            {
+                document.getElementById('result').innerHTML = 'CTRL key is pressed';
+            }
+
+            else
+            {
+                document.getElementById('result').innerHTML = 'CTRL key is not pressed';
+            }
+        }
+
+    </script>
+
+</body>
+</html>

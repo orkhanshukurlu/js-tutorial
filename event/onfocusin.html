@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnFocusIn Event</title>
+</head>
+<body>
+
+    <input type="text" id="text" onfocusin="_focusin()" onfocusout="_focusout()">
+    <span id="result" style="font-size: 16px"></span>
+    
+    <script>
+
+        // Inputa nese yazmaq ucun fokuslananda isleyen eventdir => elem.onfocusin = function{ ... }
+
+        function _focusin()
+        {
+            document.getElementById('result').innerHTML = 'Focus IN';
+        }
+
+        function _focusout()
+        {
+            document.getElementById('result').innerHTML = 'Focus OUT';
+        }
+
+        // Focus In eventi Focus eventine oxsardir , eyni isi icra edirler
+
+    </script>
+
+</body>
+</html>

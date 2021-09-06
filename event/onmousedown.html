@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnMouseDown Event</title>
+</head>
+<body>
+
+    <button id="button">Click</button>
+    <h3 id="result"></h3>
+    
+    <script>
+
+        // Elemente kliklenen anda bas veren eventdir => elem.onmousedown = function(){ ... }
+
+        var result = document.getElementById('result');
+        var button = document.getElementById('button')
+
+        button.onmousedown = function()
+        {
+            result.innerHTML = 'Mouse DOWN';
+        }
+
+        button.onmouseup = function()
+        {
+            result.innerHTML = '';
+        }
+
+    </script>
+
+</body>
+</html>

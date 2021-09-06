@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Src Method</title>
+</head>
+<body>
+
+    <button id="set_btn">Set Image</button>
+    <button id="get_btn">Get Image</button>
+    <br><br>
+    <img src="#" width="100">
+    <br><br>
+    <h3 id="result"></h3>
+
+    <script>
+
+        // Image teqinin src-sini goturmek ve ya deyisdirmek ucun istifade edilir => elem.src;
+
+        document.getElementById('set_btn').onclick = function()
+        {
+            document.querySelector('img').src = '../images/js.jpg'; // img-e yeni src verdik
+        }
+
+        document.getElementById('get_btn').onclick = function()
+        {
+            document.getElementById('result').innerHTML = document.querySelector('img').src;
+
+            // Yeni verdiyimiz src-ye esasen seklin tam src-si http://127.0.0.1:5500/images/js.jpg
+        }
+    
+    </script>
+
+</body>
+</html>

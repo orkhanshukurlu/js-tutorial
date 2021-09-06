@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnChange Event</title>
+</head>
+<body>
+
+    <input type="text" id="text">
+
+    <select id="lang">
+        <option>AZ</option>
+        <option>EN</option>
+        <option>RU</option>
+    </select>
+
+    <input type="checkbox" id="checkbox">
+
+    <span id="result" style="font-size: 16px"></span>
+    
+    <script>
+
+        // Inputun deyeri deyiserken bas veren eventdir => elem.onchange = function{ ... }
+
+        // Icine nese daxil edilen inputlarda inputu terk ederken deyeri deyisibse bu event isleyir
+
+        document.getElementById('text').onchange = function()
+        {
+            alert('Inputun deyeri deyisdi , yeni deyer => ' + this.value);
+        }
+
+        // Nese secilen inputlarda (checkbox ve selectbox) secilme bas vererken bu event isleyir
+
+        document.getElementById('checkbox').onchange = function()
+        {
+            alert('Inputun deyeri deyisdi , yeni deyer => ' + this.value);
+        }
+
+        document.getElementById('lang').onchange = function()
+        {
+            alert('Inputun deyeri deyisdi , yeni deyer => ' + this.value);
+        }
+
+    </script>
+
+</body>
+</html>
