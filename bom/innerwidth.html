@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>InnerWidth Method</title>
+</head>
+<body>
+
+    <button onclick="getWidth();">Get html page size</button>
+    <span id="result"></span>
+    
+    <script>
+
+        // Html ekraninin genisliyini (px ile) geri dondurur => elem.innerWidth;
+
+        function getWidth()
+        {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+
+            document.getElementById('result').innerHTML = 'Height = ' + h + ' , Width = ' + w;
+        }
+
+    </script>
+
+</body>
+</html>

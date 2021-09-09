@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Get Request</title>
+</head>
+<body>
+
+    <form>
+        <input type="text" id="firstname">
+        <input type="text" id="lastname">
+        <input type="submit" value="Submit">
+    </form>
+
+    <span id="result"></span>
+    
+    <script>
+
+        // Form submit olanda GET ile PHP faylina sorgu gondermek
+
+        document.querySelector('form').onsubmit = function()
+        {
+            event.preventDefault();
+
+            var firstname = document.getElementById('firstname').value;
+            var lastname  = document.getElementById('lastname').value;
+
+            var xhttp = new XMLHttpRequest();
+
+            xhttp.onload = function()
+            {
+                document.getElementById('result').innerHTML = this.responseText;
+            }
+
+            xhttp.open('GET', 'get.php?firstname=' + firstname + '&lastname=' + lastname);
+            xhttp.send();
+        }      
+        
+    </script>
+</body>
+</html>

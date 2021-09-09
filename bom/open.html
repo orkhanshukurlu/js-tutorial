@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Open Method</title>
+</head>
+<body>
+
+    <button onclick="openWindow();">Open Window</button>
+    
+    <script>
+
+        // Yeni bir pencere acmaq ucun isledilir => window.open('link', 'name', 'attributes');
+
+        function openWindow()
+        {
+            var x = window.open('', 'new_window', 'width=600,height=300');
+            x.document.write('Hello new window');
+        }
+
+        /*
+            1. Url parametrine ya link verilir ya da bos olur . Link daxil edilerse yeni pencerede hemin
+            link acilir , bos olarsa pencerenin icine ozumuz mudaxile ede bilerik
+            2. Name parametrine ya ozumuz teyin etdiyimiz ad ya target attributlarindan birini ( _blank , 
+            _parent , _self , _top ) veririk ya da bos olur . Bos olanda browserde open in new tab kimi acilir
+            3. Attributlara ya mueyyen atributlar teyin edirik ya da bos olur . Bos olarken target-e gore ya eyni
+            ya da yeni pencerede acilir . Attribut teyin etdikde ise yeni pencerenin nece olmasini teyin edirik
+            - width : Pencerenin genisliyini teyin edir , En asagi deyeri 100 (100px) olmalidir
+            - height : Pencerenin hundurluyunu teyin edir , En asagi deyeri 100 (100px) olmalidir
+            - left : Pencerenin soldan olan mesafesini teyin edir . Menfi deyer qebul elemir
+            - top : Pencerenin yuxaridan olan mesafesini teyin edir . Menfi deyer qebul elemir
+            - scrollbars : Skrollun olub olmamagi -> yes|no|1|0 . IE , Firefox ve Opera-da isleyir
+            - resizable : Pəncərənin olcusunun deyisib deyismemesi -> yes|no|1|0 . Yalniz IE-da isleyir
+            - fullscreen : Pencerenin tam ekranda acilib acilmamasi -> yes|no|1|0 . Yalniz IE-da isleyir
+            - location : Pencerede unvan sahesinin gosterilib gosterilmemesi -> yes|no|1|0 . Yalniz IE-da isleyir
+            - menubar : Pencerede menyu sahesinin gosterilib gosterilmemesi -> yes|no|1|0
+            - status : Pencerede status sahesinin elave edilib edilmemesi -> yes|no|1|0
+            - titlebar : Pencerede title sahesinin gosterilib gosterilmemesi -> yes|no|1|0
+            - toolbar : Pencerede aletler panelinin gosterilib gosterilmemesi -> yes|no|1|0 . IE ve Firefox-da isleyir
+        */
+
+    </script>
+
+</body>
+</html>

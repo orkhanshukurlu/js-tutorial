@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Close Method</title>
+</head>
+<body>
+
+    <button onclick="openWindow();">Open new window</button>
+    <button onclick="closeWindow();">Close new window</button>
+    <button onclick="closePage();">Close this page</button>
+    
+    <script>
+
+        // Acilan yeni bir pencereni ve ya sehifeni baglamaq ucun isledilir => elem.window.close();
+
+        var new_window;
+
+        function openWindow()
+        {
+            new_window = window.open('https://google.com', 'new_window', 'width=600,height=300,left=250,top=200');
+        }
+
+        function closeWindow()
+        {
+            new_window.close(); // new_window penceresini baglayir , yeni acilan pencereni
+        }
+
+        function closePage()
+        {
+            window.close(); // Sehifeni baglayir
+        }
+
+    </script>
+
+</body>
+</html>

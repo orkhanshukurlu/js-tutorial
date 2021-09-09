@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Name Method</title>
+</head>
+<body>
+
+    <button onclick="openWindow();">Open new window</button>
+    <button onclick="closeWindow();">Close new window</button>
+    
+    <script>
+
+        // Acilan yeni bir pencereye verdiyimiz adi (name-i) geri dondurur => elem.name;
+
+        var new_window;
+
+        function openWindow()
+        {
+            new_window = window.open('', 'Menim Pencerem', 'width=600,height=300,left=250,top=200');
+        }
+
+        function closeWindow()
+        {
+            if(new_window)
+            {
+                new_window.close();
+                alert(new_window.name + ' adli pencere baglandi');
+            }
+
+            else
+            {
+                alert('Hal hazirda bu pencere aciq deyil');
+            }
+            
+        }
+
+    </script>
+
+</body>
+</html>

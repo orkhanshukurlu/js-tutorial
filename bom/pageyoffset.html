@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>PageYOffset Method</title>
+</head>
+<body style="width: 4000px; height: 4000px;">
+
+    <div style="position: fixed;">
+        <button onclick="_scroll();">Click for Scroll</button>
+        <span id="result"></span>
+    </div>
+    
+    <script>
+
+        // Elementin yuxaridan scroll mesafesini elde etmek ucun isledilir => window.pageYOffset;
+
+        function _scroll()
+        {
+            window.scrollBy(150, 200);
+
+            var x = window.pageXOffset;
+            var y = window.pageYOffset;
+
+            document.getElementById('result').innerHTML = `Page X Offset = ${x} , Page Y Offset = ${y}`;
+        }
+
+    </script>
+
+</body>
+</html>

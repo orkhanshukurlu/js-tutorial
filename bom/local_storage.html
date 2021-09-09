@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>LocalStorage Method</title>
+</head>
+<body>
+
+    <button onclick="set_localstorage()">Set Local Storage</button>
+    <button onclick="get_localstorage()">Get Local Storage</button>
+    <button onclick="remove_localstorage()">Remove Local Storage</button>
+    <button onclick="remove_all_localstorage()">Remove All Local Storage</button>
+    <span id="result"></span>
+    
+    <script>
+
+        /*
+            Cookie emeliyyatlari ucun istifade edilir . Cookie brauzerin kecmisi silinene qeder , 
+            istifadeci melumatlari silene qeder ve ya brauzer silinene qeder aktiv qalir . Eks halda silinir
+            => localStorage.method();
+        */
+
+        var res = document.getElementById('result');
+
+        function set_localstorage()
+        {
+            localStorage.setItem('user', 'Orkhan Shukurlu'); // Yeni cookie yaratmaq ucun isledilir
+        }
+
+        function get_localstorage()
+        {
+            res.innerHTML = localStorage.getItem('user'); // Cookienin deyerini goturmek ucun isledilir
+        }
+
+        function remove_localstorage()
+        {
+            localStorage.removeItem('user'); // Her hansisa cookieni silmek ucun isledilir
+            res.innerHTML = '';
+        }
+
+        function remove_all_localstorage()
+        {
+            localStorage.clear(); // Butun cookieleri silmek ucun isledilir
+            res.innerHTML = '';
+        }
+
+    </script>
+
+</body>
+</html>

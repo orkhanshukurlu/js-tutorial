@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OuterHeight Method</title>
+</head>
+<body>
+
+    <button onclick="getHeight();">Get browser size</button>
+    <span id="result"></span>
+    
+    <script>
+
+        // Brauzer ekraninin hundurluyunu (px ile) geri dondurur => elem.outerHeight;
+
+        function getHeight()
+        {
+            var w = window.outerWidth;
+            var h = window.outerHeight;
+
+            document.getElementById('result').innerHTML = 'Height = ' + h + ' , Width = ' + w;
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Forward Method</title>
+</head>
+<body>
+
+    <button onclick="next();">Forward</button>
+    <a href="https://github.com/orkhanshukurlu">Go to my github</a>
+    
+    <script>
+
+        /*
+            Sonraki sehifeye getmek ucun istifade edilir . Eger sonraki sehife varsa hemin sehifeye 
+            gedir , yoxdursa hec bir sehifeye getmir
+            => window.history.forward();
+        */
+
+        function next()
+        {
+            window.history.forward();
+        }
+
+    </script>
+
+</body>
+</html>

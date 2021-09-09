@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>SessionStorage Method</title>
+</head>
+<body>
+
+    <button onclick="set_session()">Set Session</button>
+    <button onclick="get_session()">Get Session</button>
+    <button onclick="remove_session()">Remove Session</button>
+    <button onclick="remove_all_session()">Remove All Session</button>
+    <span id="result"></span>
+    
+    <script>
+
+        /*
+            Sessiya emeliyyatlari ucun istifade edilir . Sessiya brauzer ve ya hemin sehife aciq qaldigi 
+            muddetde aktivdir , eger sehife ve ya brauzer baglanarsa sessiyanin vaxti bitir
+            => sessionStorage.method();
+        */
+
+        var res = document.getElementById('result');
+
+        function set_session()
+        {
+            sessionStorage.setItem('user', 'Orkhan Shukurlu'); // Yeni sessiya yaratmaq ucun isledilir
+        }
+
+        function get_session()
+        {
+            res.innerHTML = sessionStorage.getItem('user'); // Sessiyanin deyerini goturmek ucun isledilir
+        }
+
+        function remove_session()
+        {
+            sessionStorage.removeItem('user'); // Her hansisa sessiyani silmek ucun isledilir
+            res.innerHTML = '';
+        }
+
+        function remove_all_session()
+        {
+            sessionStorage.clear(); // Butun sessiyalari silmek ucun isledilir
+            res.innerHTML = '';
+        }
+
+    </script>
+
+</body>
+</html>

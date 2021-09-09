@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Open Method</title>
+</head>
+<body>
+    
+    <script>
+
+        /*
+            Sorgunun novunu teyin edir => variable.open('method', 'url', 'async');
+            Yazilmis url-e sorgu gonderir => variable.send();
+        
+            Method : Sorgunun tipini mueyyen edir -> POST ya da GET
+            Url : Faylin adini mueyyen edir -> ajax.txt
+            Async : true (asinxron) ya da false (sinxron) . Default true , Ajax sorgulari asinxron olmalidir
+        */
+
+        var xhttp = new XMLHttpRequest();
+
+        xhttp.open('GET', 'ajax.txt');
+
+        xhttp.send();
+
+        console.log(xhttp); // Sorgudan gelen cavablari konsol ekraninda gorecik
+
+        /*
+            readyState: 4 -> Sorgunun tamamlandigini ve bir cavab geri donduyunu bildirir
+            response: "This is txt file" -> Sorgudan gelen cavabdir
+            responseText: "This is txt file" -> Sorgudan gelen cavabin metni
+            responseURL: "http://127.0.0.1:5500/ajax/ajax.txt" -> Sorgu gonderdiyimiz url adresi
+            status: 200 -> Sorgu ugurla basa catdigi ucun sorgunun status nomresi 200 qayidir
+            statusText: "OK" -> Sorgu ugurla basa catdigi ucun sorgunun status nomresinin metni 'OK' qayidir
+        */
+        
+    </script>
+</body>
+</html>

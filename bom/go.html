@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>Go Method</title>
+</head>
+<body>
+
+    <button onclick="_go();">Go</button>
+    
+    <script>
+
+        /*
+            Nece addim evvelki ve ya sonraki sehifeye getmek ucun istifade edilir . Eger sonraki sehife 
+            varsa hemin sehifeye gedir , yoxdursa hec bir sehifeye getmir
+            => window.history.go();
+        */
+
+        function _go()
+        {
+            window.history.go(-2); // 2 addim evvelki sehifeye gedecek
+            
+            // Menfi olanda evvelki , musbet olanda sonraki sehifeye gedecek
+        }
+
+    </script>
+
+</body>
+</html>

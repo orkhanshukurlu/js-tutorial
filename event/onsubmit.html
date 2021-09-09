@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>OnSubmit Event</title>
+</head>
+<body>
+
+    <form onsubmit="submit_form()">
+        <input type="text">
+        <input type="submit" value="Submit">
+    </form>
+    
+    <script>
+
+        // Form gonderildiyinde (submit edildiyinde) isleyen eventdir => elem.onsubmit = function(){ ... }
+
+        function submit_form()
+        {
+            alert('Form gonderildi');
+        }
+
+    </script>
+
+</body>
+</html>

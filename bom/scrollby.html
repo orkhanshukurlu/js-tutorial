@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>ScrollBy Method</title>
+</head>
+<body style="width: 4000px; height: 4000px;">
+
+    <div style="position: fixed;">
+        <button onclick="_scroll();">Click for Scroll</button>
+        <span id="result"></span>
+    </div>
+    
+    <script>
+
+        // Elemente soldan ve yuxaridan scroll vermek ucun isledilir => window.scrollBy(left, top);
+
+        function _scroll()
+        {
+            window.scrollBy(150, 200);
+
+            var x = window.pageXOffset; // Elementin soldan scroll mesafesini goturur
+            var y = window.pageYOffset; // Elementin yuxaridan scroll mesafesini goturur
+
+            document.getElementById('result').innerHTML = `Page X Offset = ${x} , Page Y Offset = ${y}`;
+
+            // 1. Elemente ancaq soldan scroll vermek ucun => window.scrollBy(number, '');
+            // 2. Elemente ancaq yuxaridan scroll vermek ucun => window.scrollBy('', number);
+        }
+
+    </script>
+
+</body>
+</html>

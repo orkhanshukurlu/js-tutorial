@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
-    <title>OnSearch Event</title>
+    <title>Back Method</title>
 </head>
 <body>
 
-    <input type="search" onsearch='search_input(this)'>
+    <button onclick="previous();">Back</button>
     
     <script>
 
         /*
-            Type-i search olan inputda hansisa sozu axtarib Entere basdigimizda isleyen eventdir
-            => elem.onsearch = function(){ ... }
+            Evvelki sehifeye getmek ucun istifade edilir . Eger evvelki sehife varsa hemin sehifeye 
+            gedir , yoxdursa hec bir sehifeye getmir
+            => window.history.back();
         */
 
-        function search_input(search)
+        function previous()
         {
-            alert('Axtarilan soz : ' + search.value);
+            window.history.back();
         }
 
     </script>

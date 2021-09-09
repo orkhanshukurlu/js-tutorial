@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/js.jpg" type="image/gif" sizes="16x16">
+    <title>XMLHttpRequest Method</title>
+</head>
+<body>
+    
+    <script>
+
+        // Sehife yenilenmeden bas veren melumat mubadilesi ucun istifade edilir => new XMLHttpRequest();
+
+        var xhttp = new XMLHttpRequest();
+
+        console.log(xhttp); // XMLHttpRequest obyektinin bir sira ozellikleri geri donur
+
+        /*
+            1. onload : Istek alindiqda cagirilacaq funksiyani teyin edir
+            2. onreadystatechange : readystate ozelliyi deyisende cagirilacaq funksiyani teyin edir
+            3. readyState : XMLHttpRequest statusunu saxlayir . 5 dene status var
+                0 => Sorgu baslanmadi
+                1 => Server baglantisi quruldu
+                2 => Muraciet (istek) alindi
+                3 => Sorgu davam edir
+                4 => Sorgu tamamlandi ve cavab hazirdi
+            4. responseText : Sorgudan gelen melumati string kimi geri dondurur
+            5. responseXML : Sorgudan gelen melumati XML kimi geri dondurur
+            6. status : Sorgunun status nomresini geri dondurur (200 - OK , 404 - Not found , 403 - Forbidden)
+            7. statusText : Sorgu status nomresinin metnini geri dondurur ('OK', 'Not found')
+        */
+        
+    </script>
+</body>
+</html>
